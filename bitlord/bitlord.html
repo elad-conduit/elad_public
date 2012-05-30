@@ -1,0 +1,265 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+    <head>
+        <title>"Bitlord Template"</title>
+        <script type="text/javascript" name="conduit" src="http://api.conduit.com/BrowserCompApi.js">
+        </script>
+        <script type="text/javascript" name="jquery" src="http://code.jquery.com/jquery-latest.js">
+        </script>
+        <script type="text/javascript">
+            var websiteListXMLURL = "http://www.bitlordsearch.com/toolbar/sites.xml";
+            // Use this object for Website data
+            var websiteList;
+            // Use this object for specific URL data
+            var URLStatus;
+            $(document).ready(function(){
+               // When document is ready make an ajax request to get the list of websites to search
+               $.ajax({
+                    async:false,
+                    url: "jsonize.php",
+                    data: "url=" + websiteListXMLURL,
+                    success: function(result)
+                    {
+                        eval('websiteList = ' +  result + ';');
+                    }
+                });
+               // Make ALL FUNCTION CALLS HERE, NOWHERE ELSE!
+               
+               todoit();
+                
+            });
+            
+            function todoit()
+            {
+                var flag=0;
+                document.getElementById("more").style.display="none";
+                webUrl=GetMainFrameUrl();
+                var divAll=document.getElementById("all");
+                lister=document.getElementById("ddl");
+                if(webUrl!=""&&webUrl.substr(webUrl.length-13)!="aboutTabs.htm"&&webUrl.substr(webUrl.length-14)!="aboutTabs.html"&&webUrl.substr(webUrl.length-12)!="newTabs.html"&&webUrl.substr(webUrl.length-11)!="newTab.html"&&webUrl.substr(0,5)!="about"){
+                    
+                    divAll.style.display="block";
+                    lister.style.display="none";
+                    var urlStatus="neutral";
+                    webName=webUrl.split("/",3);
+                   
+                    if(checkWebsiteName(webName[0]+"//"+webName[2])){
+                        urlStatus=getURLInfo(webUrl,webName[2]);
+                    }
+                    else if(checkWebsiteName(webName[0]+"//"+webName[2].replace("www.",""))){
+                        urlStatus=getURLInfo(webUrl,webName[2]);
+                    }
+                    else if(checkWebsiteName(webName[0]+"//www."+webName[2])){
+                        urlStatus=getURLInfo(webUrl,webName[2]);
+                    }
+                    else flag++;/*document.getElementById("text").innerHTML=webName[2] + " "*/;
+                    urlStatus=(urlStatus!='neutral'&&urlStatus!='good'&&urlStatus!='bad')?'neutral':urlStatus;
+                    document.getElementById("view").src="http://Storage.conduit.com/53/283/CT2838053/Images/"+urlStatus+".Png";
+                    if(flag!=0){
+                        divAll.style.display="none";
+                        lister.style.display="block";
+                        ChangeWidth(120);
+                    }
+                    else if(document.getElementById("more").style.display=="none"){
+                    ChangeWidth((parseInt(document.getElementById("text").innerHTML.length)*6)+35);
+                    }
+                    else {
+                        
+                        var wwidth=120;
+                        if(urlStatus=="neutral"){
+                        wwidth=170;
+                        }
+                        if(urlStatus=="good"){
+                            wwidth=260;
+                        }
+                        if(document.getElementById("cmnt").style.display=="block"){
+                            wwidth+=35;
+                        }
+                        ChangeWidth(wwidth);
+                    }
+                }
+                else {
+                    
+                    divAll.style.display="none";
+                    lister.style.display="block";
+                    ChangeWidth(120);
+                }
+            }
+            var webUrl;
+            var webName;
+            if(navigator.appName=="Microsoft Internet Explorer"&&navigator.appVersion=="7")
+            {
+            function EBNavigateComplete()
+            {
+                
+                todoit();
+                
+            }  
+            }
+            else{
+            function EBDocumentComplete()
+            {
+                
+                todoit();
+                
+            }
+            }
+            function EBTabChange(){
+                todoit();
+            }
+            
+            function checkWebsiteName(wbn)
+            {
+                for (i=0; i<websiteList.sites.item.length; i++)
+                {
+                    if (wbn == websiteList.sites.item[i].url)
+                    {
+                        return true;
+                    }
+                }
+                return false;
+            }
+            var floatUrl='';
+            function getURLInfo(url,WebName)
+            {
+                $.ajax({
+                    async: false,
+                   url: "jsonize.php",
+                   data: "url=" + encodeURIComponent("http://www.bitlordsearch.com/toolbar/locations.php?url=") + encodeURIComponent(url),
+                    success:function(result)
+                    {
+                        eval("URLStatus = " + result + ";");
+                    }
+                });
+                // Do whatever you want - e.g. return the Status of the webpage.
+                var urlStatus=URLStatus.toolbar_info.status;
+                
+            
+                if(urlStatus=="bad"){
+                    document.getElementById("text").innerHTML=WebName + " HAS VIRUS";
+                }
+                else if(urlStatus=="neutral"){
+                    if(URLStatus.toolbar_info.download_links.item.length>0){
+                        
+                        document.getElementById("text").innerHTML="";
+                        document.getElementById("more").style.display="block";
+                        
+                    }
+                    else document.getElementById("text").innerHTML=WebName + "";
+                }
+                else if(urlStatus=="good"){
+                    if(URLStatus.toolbar_info.download_links.item.length>0){
+                        
+                        document.getElementById("text").innerHTML="Good Torrent";
+                        document.getElementById("more").style.display="block";
+                        
+
+                    }
+                    else {document.getElementById("text").innerHTML=WebName + " is good";}
+                }
+                else document.getElementById("text").innerHTML=WebName + "";
+                if(document.getElementById("more").style.display=="block"){
+                    if(URLStatus.toolbar_info.comments.count!=0){
+                        document.getElementById("cmntNum").innerHTML=URLStatus.toolbar_info.comments.count;
+                        document.getElementById("cmnt").style.display="block";
+                        floatUrl=URLStatus.toolbar_info.comments.url;
+                    }
+                    else document.getElementById("cmnt").style.display="none";
+                }
+                else document.getElementById("cmnt").style.display="none";
+                
+                return (urlStatus);
+            }
+                function OpenIt(){
+                
+				var Ourl="http://cap1.conduit-apps.com/Apps/Bitlord/floater.html?urlStr="+encodeURIComponent(GetMainFrameUrl());
+                var realHeight = parseInt(100);
+                
+                LaunchGadget(Ourl, 150, realHeight,'resizable=no,closebutton=no,closeonexternalclick=yes,savelocation=no,openposition=alignment:(B;R),scrollbars=no,titlebar=no');
+                
+            }
+            function OpenDDL(){
+                var realHeight = parseInt(172);
+               
+                LaunchGadget("http://cap1.conduit-apps.com/Apps/Bitlord/ddl.html", 180, realHeight,'resizable=no,closebutton=no,closeonexternalclick=yes,savelocation=no,openposition=alignment:(B;L),scrollbars=no,titlebar=no');
+                
+            }
+            function NavTo(){
+                NavigateInMainFrame(floatUrl);
+            }
+
+        </script>
+        <!-- Hook this up to the HTML UI -->
+
+        <style>
+        body{
+            padding-left:10px;
+            margin:0px;
+            font-family:tahoma;
+            font-size:8pt;
+            overflow:hidden;
+        }
+        #view,#more,.text,#plus,#down,#cmnt,#downer{
+            float:left;
+            
+        }
+        .text{
+            cursor:default;
+            margin:4px;
+        }
+        #more,#text,#cmntNum,#cmnt{
+            width:auto;
+            height:24px;
+        }
+        #more{
+            cursor:pointer;
+        }
+        #down{
+            margin-top:1px;
+        }
+        #all{
+            margin-top:1px;
+            width:500px;
+        }
+        #ddl{
+            cursor:pointer;
+            text-align: left;
+            width:150px;
+            height:24px;
+            
+        }
+        #cmnt{
+            cursor:pointer;
+        }
+        .over{
+            border:1px solid #CDCDEE;
+            background-color:#DDEEFF;
+            
+        }
+        .normal{
+            border:1px solid #D3DAED;
+        }
+        
+        
+        </style>
+    </head>
+    <body>
+        <div id="ddl" class="normal" onmouseover="this.className='over';" onmouseout="this.className='normal';" onclick="OpenDDL();">
+            <table>
+				<tbody><tr>
+					<td style=""><img src="http://storage.conduit.com/65/283/CT2830765/Images/633461937287150000.gif"></td>
+					<td nowrap="nowrap" style="white-space: nowrap; font-family: Tahoma; font-size: 8pt; color: rgb(0, 0, 0);"><div style="">Find downloads</div></td>
+
+					<td style=""><img src="http://accounts.conduit.com/Images/pulldown_arrow.gif"></td>
+				</tr>
+			</tbody></table>
+        </div>
+        <div id="all">
+            <img id="view" align="middle" src="http://storage.coNduit.com/53/283/CT2838053/Images/Neutral.png" alt=""/><div class="text" id="text"> </div>
+            <div class="normal" onmouseover="this.className='over';" onmouseout="this.className='normal';" id="cmnt" title="Read comments before you download" onClick="NavTo();" style="display:none;"><img style="float:left;margin-top:2px;" align="middle" src="http://storage.conduit.com/65/283/CT2830765/Images/634283550465343750.png"/><span id="cmntNum" class="text"></span></div>
+            <div class="normal" onmouseover="this.className='over';" onmouseout="this.className='normal';" id="more" onclick="OpenIt();" style="display:none;"><!--<img id="plus" align="middle" src="http://storage.conduit.com/53/283/CT2838053/Images/more%20sources.png" alt=""/>--><img id="down" align="middle" src="http://storage.conduit.com/65/283/CT2830765/Images/634285211727312500.png" alt=""/> <div class="text">Download locations</div><img id="downer" align="middle" src="http://accounts.conduit.com/Images/pulldown_arrow.gif" alt=""/></div>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,178 @@
+﻿body
+{
+	overflow:hidden;
+	margin: 0;
+	padding: 0;
+}
+#container
+{
+	height:314px;
+	width:300px;
+	position:relative;
+		
+}
+#logo
+{
+	display: block;
+	background:url(../images/location/logo.png) no-repeat;
+	/*float: left;*/
+	clear: both;
+	position: relative;
+	left: 8px;
+	width:195px;
+	height: 16px;
+	margin: 4px 0 0 0;
+	cursor: pointer;
+}
+
+#searchClose
+{
+	float:right;
+	height: 13px;
+	width: 13px;
+	margin: 4px 23px 0 0;
+	background: url(../images/location/close_button.png) no-repeat;
+	cursor: pointer;
+}
+#searchContainer
+{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	
+	width: 329px;
+	height: 22px;
+}
+#searchWrapper
+{
+	position: relative;
+	
+	width: 329px;
+	height: 22px;
+
+
+
+	
+}
+#searchInput
+{
+	border: none;
+	width: 239px;
+	height: 22px;
+	margin: 1px 0 0 6px;
+	background: none;
+	float: left;
+	border: 2px solid #B4B6B8;
+
+}
+#searchBtn
+{
+	height: 22px;
+	width: 68px;
+	background: url(../images/go.png) no-repeat;
+	float: right;
+	margin: 5px 1px 0px 9px;
+	cursor: pointer;
+}
+#searchResults
+{
+	position: relative;
+	top: 40px;
+	height: 235px;
+	width: 300px;
+	cursor: pointer;
+	
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+#ResultsList
+{
+	text-align: left;
+	
+}
+ul
+{
+	margin: 0;
+	padding: 0;
+	margin-top: 5px;
+
+
+	
+}
+li.result
+{
+	
+
+	
+	
+}
+.addtext
+{
+	margin: 5px 5px 5px 8px;
+	width: 246px;
+	border-bottom: 1px solid #B4B6B8; 
+}
+.addbutton
+{
+	font-family: arial, sans-serif;
+	font-size: 12px;
+	text-align: left;
+	line-height: 130%;
+	color: #4465B5;
+	text-decoration: none;
+	margin: 10px 5px 5px 5px;
+	cursor: pointer;
+	
+	width: 270px;
+	min-height: 15px;
+	background: url(../images/location/add_button.png) center right no-repeat;
+	vertical-align: 50%;
+	
+		
+}
+#strlocationResults
+{
+	position: relative;
+	top: 40px;
+	height: 235px;
+	width: 310px;
+	
+	
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.removebutton
+{
+	font-family: arial, sans-serif;
+	font-size: 12px;
+	text-align: left;
+	line-height: 130%;
+	color: #4465B5;
+	text-decoration: none;
+	margin: 10px 5px 5px 0px;
+	
+	width: 280px;
+	min-height: 15px;
+	background: url(../images/location/delete_button.png) center right no-repeat;
+	vertical-align: 50%;
+	cursor: pointer;
+
+		
+}
+
+.addbutton:hover
+{
+	color: #1059D7;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.cleardefault
+{
+	font-family: arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: left;
+	color: #732023;
+}

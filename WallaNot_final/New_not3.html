@@ -1,0 +1,190 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd"
+    >
+<html>
+<head>
+    <script src="http://code.jquery.com/jquery-1.7.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html;charset=iso-8859-8-i">
+    <style>
+        body {
+            margin: 0;
+            padding:0;
+            overflow: hidden;
+        }
+        #walla_container
+        {
+            font-family: arial;
+            font-weight: bold;
+            color: #2f2f2f;
+            background-image: url("bg.jpg");
+            width: 254px;
+            height: 214px;
+            font-size: 15px;
+        }
+        #top {
+            height: 54px;
+            width: 254px;
+        }
+        #pictures {
+            width: 249px;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+        .pic  {
+            height: 94px;
+            width:77px;
+            float: left;
+            margin-right: 2px;
+        }
+        .block {
+            height: 150px;
+            width: 77px;
+            margin-right: 2px;
+            cursor: pointer;
+            float: left;
+        }
+        .text_block {
+            text-align: center;
+            direction: rtl;
+            height: 38px;
+            width: 79px;
+            float: right;
+            cursor: pointer;
+            margin-right: 3px;
+            
+        }
+        a {
+            text-decoration: none;
+            color: #2f2f2f;
+        }
+        #icon {
+            float: right;
+            height: 25px;
+            width: 135px;
+            cursor: pointer;
+            margin-top: 10px;
+            margin-right: 28px;
+        }
+        .btn {
+            background-image: url("button.gif");
+            height: 16px;
+            width: 41px;
+            float: left;
+            margin-right: 37px;
+            margin-left: 15px
+            
+        }
+
+        
+    </style>
+     <script src="http://api.conduit.com/alertApi.js" type="text/javascript"></script>
+    <script>
+    function walla_mover_count(dn){
+        var a = new Image();
+        a.src = "http://events.walla.co.il/events.asp?l=walla.specials.&event_type=1&DIvName=MesToolbarMusic_EX"+ dn +"&page_location=5&geo=IL&un=1&rnd="+Math.random();
+    }
+    var imgNames = ["button.gif","bg.jpg", "alltime_hits.png", "israel_hits.png","medit_hits.png"];
+    var imgs = [];
+    for (var i=0; i<imgNames.length; i++) {
+            var img = new Image();
+            img.src = imgNames[i];
+            imgs.push(img);
+    }
+    </script>
+</head>
+<body>
+    <div id="walla_container">
+        <div id="top">
+            <div id="icon"></div>
+        </div>
+        
+        <div id="block1" class="block" style="margin-left: 11px;" onmouseover="javascript: $('#btn1').css('background-position','0 -16px');" onmouseout="javascript: $('#btn1').css('background-position','0 0px');">
+            <div class="pic" style="background-image: url('alltime_hits.png');"></div>
+            <div class="text_block">להיטי  <br> כל הזמנים</div>
+            <div id="btn1" class="btn"></div>
+        </div>
+        <div id="block2" class="block" onmouseover="javascript: $('#btn2').css('background-position','0 -16px');" onmouseout="javascript: $('#btn2').css('background-position','0 0px');">
+            <div class="pic" style="background-image: url('israel_hits.png');"></div>
+            <div class="text_block">להיטים ישראלים</div>
+            <div id="btn2" class="btn"></div>
+        </div>
+        <div id="block3" class="block" onmouseover="javascript: $('#btn3').css('background-position','0 -16px');" onmouseout="javascript: $('#btn3').css('background-position','0 0px');">
+            <div class="pic" style="background-image: url('medit_hits.png');"></div>
+            <div class="text_block">להיטים <br> ים תיכונים</div>
+            <div id="btn3" class="btn" style="margin-right: 0px;"></div>
+        </div>
+        
+        
+    </div>
+    <script type="text/javascript">
+           var _gaq = _gaq || [];
+             _gaq.push(['_setAccount', 'UA-25806324-1']);
+             _gaq.push(['_trackPageview']);
+
+             (function() {
+                           var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                           ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+             })();
+    </script>
+     <script type="text/javascript">
+                
+        $(document).ready(function () {
+                        // Assign the click event to the main container or to the notification's button
+                        $("#icon").click(function () {
+                                        // Change the path to the actual notification's path, and add the ?action=clicked parameter
+                                        _gaq.push(['_trackPageview', 'http://storage.conduit.com/PS/Apps/Walla/Notification/New/New_not4.html?action=clicked']);
+                                        walla_mover_count("1");
+                                        if (navigator.userAgent.indexOf("Chrome")>=0)
+                                         {
+                                            window.open("http://events.walla.co.il/WidgetEvent.asp?l=walla.specials.&event_type=1&DIvName=MesToolbarMusic&page_location=5&geo=IL&un=&url=http://music.walla.co.il/","tab");
+                                         }
+                                         else{
+                                            openLink("http://events.walla.co.il/WidgetEvent.asp?l=walla.specials.&event_type=1&DIvName=MesToolbarMusic&page_location=5&geo=IL&un=&url=http://music.walla.co.il/","tab");
+                                            CloseNotification();
+                                         }
+                        });
+                        $("#block1").click(function () {
+                                        // Change the path to the actual notification's path, and add the ?action=clicked parameter
+                                        _gaq.push(['_trackPageview', 'http://storage.conduit.com/PS/Apps/Walla/Notification/New/New_not4.html?action=clicked']);
+                                        walla_mover_count("2");
+                                        if (navigator.userAgent.indexOf("Chrome")>=0)
+                                         {
+                                            window.open("http://events.walla.co.il/WidgetEvent.asp?l=walla.specials.&event_type=1&DIvName=MesToolbarMusic&page_location=5&geo=IL&un=&url=http://music.walla.co.il/$type*channel$itemId*17","tab");
+                                         }
+                                         else{
+                                            openLink("http://events.walla.co.il/WidgetEvent.asp?l=walla.specials.&event_type=1&DIvName=MesToolbarMusic&page_location=5&geo=IL&un=&url=http://music.walla.co.il/$type*channel$itemId*17","tab");
+                                            CloseNotification();
+                                         }
+                        });
+                        $("#block2").click(function () {
+                                        // Change the path to the actual notification's path, and add the ?action=clicked parameter
+                                        _gaq.push(['_trackPageview', 'http://storage.conduit.com/PS/Apps/Walla/Notification/New/New_not4.html?action=clicked']);
+                                        walla_mover_count("3");
+                                         if (navigator.userAgent.indexOf("Chrome")>=0)
+                                         {
+                                            window.open("http://events.walla.co.il/WidgetEvent.asp?l=walla.specials.&event_type=1&DIvName=MesToolbarMusic&page_location=5&geo=IL&un=&url=http://music.walla.co.il/^type*channel$itemId*216","tab");
+                                         }
+                                         else{
+                                            openLink("http://events.walla.co.il/WidgetEvent.asp?l=walla.specials.&event_type=1&DIvName=MesToolbarMusic&page_location=5&geo=IL&un=&url=http://music.walla.co.il/^type*channel$itemId*216","tab");
+                                            CloseNotification();
+                                         }
+                        }); 
+                        $("#block3").click(function () {
+                                        // Change the path to the actual notification's path, and add the ?action=clicked parameter
+                                        _gaq.push(['_trackPageview', 'http://storage.conduit.com/PS/Apps/Walla/Notification/New/New_not4.html?action=clicked']);
+                                        walla_mover_count("4");
+                                        if (navigator.userAgent.indexOf("Chrome")>=0)
+                                         {
+                                            window.open("http://events.walla.co.il/WidgetEvent.asp?l=walla.specials.&event_type=1&DIvName=MesToolbarMusic&page_location=5&geo=IL&un=&url=http://music.walla.co.il/$type*channel$itemId*18","tab");
+                                         }
+                                         else{
+                                            openLink("http://events.walla.co.il/WidgetEvent.asp?l=walla.specials.&event_type=1&DIvName=MesToolbarMusic&page_location=5&geo=IL&un=&url=http://music.walla.co.il/$type*channel$itemId*18","tab");
+                                            CloseNotification();
+                                         }
+                        });
+        });
+    </script>
+</body>
+</html>

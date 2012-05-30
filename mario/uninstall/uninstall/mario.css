@@ -1,0 +1,59 @@
+    body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    #conduit_uninstallPage_container {
+        background-image: url("all_bg.png");
+        background-position: 0 -686px;
+        height: 343px;
+        width: 604px;
+        float: left;
+        display: none;
+    }
+    #conduit_uninstallerPage_rightBtn{
+         background-image: url("uninstall_btn.png");
+         height: 60px;
+         width: 178px;
+         cursor: pointer;
+         float :right;
+         margin-top: 141px;
+         margin-right: 0px;
+    }
+    #conduit_uninstallerPage_rightBtn:hover {
+        background-position: 0 -68px;
+    }
+    #conduit_uninstallerPage_leftBtn{
+         background-image: url("keep_btn.png");
+         height: 60px;
+         width: 178px;
+         cursor: pointer;
+         margin-top: 141px;
+         float: left;
+         margin-left: 28px;
+    }
+    #conduit_uninstallerPage_leftBtn:hover {
+        background-position: 0 -68px;
+    }
+    #conduit_uninstallerPage_leftSide {
+        float: left;
+        height: 343px;
+        width: 302px;
+    }
+    #conduit_uninstallerPage_rightSide {
+        float: left;
+        height: 343px;
+        width: 302px;
+    }
+    #conduit_uninstallerPage_closeBtn {
+        background-image: url("close.png");
+        float: right;
+        height: 14px;
+        width: 14px;
+        cursor: pointer;
+        margin-top: 8px;
+        margin-right: 13px;
+    }
+    #conduit_uninstallerPage_closeBtn:hover {
+        background-position: 0 -14px;
+    }

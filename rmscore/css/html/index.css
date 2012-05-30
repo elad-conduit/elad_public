@@ -1,0 +1,51 @@
+body {
+	background-color: #171717;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+#wrapper {
+	margin: 0 auto;
+	width: 700px;
+}
+
+#content {
+	width: 100%;
+}
+
+img {
+	border: 0px;
+	padding: 0px;
+}
+
+tr, td {
+	border: 0px;
+	margin: 0px;
+	padding: 10px;
+}
+
+#team {
+	font-size: 25px;
+}
+
+#score {
+	font-size: 50px;
+}
+
+.team1, .score1 {
+	color: green;
+}
+
+.team2, .score2 {
+	color: red; 
+}
+
+.date {
+	font-size: 20px; 
+	color: white;
+}
+
+.timeRemaining, .white {
+	font-size: 20px;
+	color: white;
+}

@@ -1,0 +1,89 @@
+/* --- Resets --- */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, a, img, b, u, i, center, ol, ul, li, form, table, tbody, tfoot, thead, tr, th, td
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+}
+
+html {overflow-y: scroll} 
+body {line-height: 1; color: #020202; font-family: Tahoma; font-size:11px; direction:ltr; /*overflow-x:hidden;*/}
+h1, h2, h3, h4, h5, h6 {font-family:Georgia, David; font-weight:normal;}
+a, .a {text-decoration: none; color: #0170b1; cursor:pointer;}
+a:hover {text-decoration: none;}
+ul {list-style: none;}
+
+:focus {outline:none;}
+
+
+/* --- Resets END --- */
+
+.scrollbar_measure_outer {position: absolute; top: 0; left: 0; visibility: hidden; width: 200px; height: 150px; overflow: hidden;}
+.scrollbar_measure_inner {width: 100%; height: 200px;}
+
+.anabel_iframe {display:block; visibility:hidden; border: 0 none; width: 100%;}
+.anabel_iframe.old {height: 100%; position: absolute; left: 0; top: 0;}
+
+#genieoHeaderContent {background:white; /*overflow:hidden;*/ position:relative;}
+
+#genieoHeaderContent .left_cell {background: white;}
+#genieoHeaderContent .center_cell {width:960px; background: white; vertical-align: top; height:800px}
+#genieoHeaderContent .right_cell {background:white;}
+
+#genieoHeaderContent ul#top_links {height:30px; color:#000000; font-family:Arial; font-size:16px; margin-left:270px;}
+#genieoHeaderContent ul#top_links li {float:left; margin-right:5px;}
+#genieoHeaderContent ul#top_links li.selected a{color: black}
+#genieoHeaderContent ul#top_links li.notSelected a{color: #0170B1}
+#genieoHeaderContent ul#top_links li a {display:block; padding:7px 7px 7px 7px;}
+#genieoHeaderContent ul#top_links li a:hover {color:#E25858;}
+#genieoHeaderContent ul.top_links li.more {position:relative; z-index:2; padding:7px 14px 7px 7px; background:url('../img/more.png') 49px 14px no-repeat;}
+#genieoHeaderContent ul.top_links li.more ul.drop {position:absolute; background:white; width:122px; left:0px; top:23px; border:1px solid #C3D1EC; z-index:900; display:none; padding:5px 0;}
+#genieoHeaderContent ul.top_links li.more ul.drop li {width:122px;}
+#genieoHeaderContent ul.top_links li.more ul.drop li a {font-size:12px;}
+#genieoHeaderContent ul.top_links li.more ul.drop li a:hover {background:#E1EDFD;}
+#genieoHeaderContent ul.top_links li.more:hover {background-color:rgba(255,255,255,0.15);}
+#genieoHeaderContent ul.top_links li.more:hover ul.drop {display:block;}
+
+#genieoHeaderContent .content {width:920px; margin:30px auto 30px auto; height:130px;}
+#genieoHeaderContent .content .left_column {float:left; width:170px; height: 1px}
+#genieoHeaderContent .content .left_column a.logo {float:right; background:url('') left top no-repeat; width:112px; height:80px; margin-right:12px; margin-top:3px;}
+
+#genieoHeaderContent .content .middle_column {float:left; width:677px; position:relative; z-index:1;}
+#genieoHeaderContent .content .middle_column .search_container {height:30px; margin-top:2px;}
+#genieoHeaderContent .content .middle_column .search_container .query_input_border {float:left; width:564px; height:41px; background:white; border:1px solid; border-color: #ACBABD;}
+.focusBorder{border-color: #afafaf !important}
+#genieoHeaderContent .content .middle_column .search_container .query_input_border #query_input {font-size:20px; border:0 none; border-top:0px solid /*#f0f0f0*/#054A73; padding:7px 5px 7px 5px; margin:0; width:510px; background:white;}
+
+#genieoHeaderContent .content .middle_column .search_container #query_input:focus {outline: none;}
+
+.logoImg { margin: 0px auto; margin-top:60px; width: 143px; height: 32px; background:url('Cleanlab_logo.jpg') no-repeat; }
+.breaker {clear:both; float:none;}
+#query_input {float:left}
+.btnhome {
+    background: url("glassicon.png") no-repeat;
+    border: 0 none;
+    cursor: pointer;
+    float:left;
+    font-size: 0;
+    height: 37px;
+    margin: 2px 0 0 5px;
+    width: 37px;
+}
+.searchDefaultBtn {font-size: 15px; height: 40px; width: 90px; margin: 16px 0 0 236px;cursor:pointer}
+.ads {width: 728px; height: 90px; margin:160px 0 0 135px; float: left; display: none;}
+.copyrights{font-family: arial; font-size: 12px; color: black; margin:300px 0 0 415px}
+#genieoHeaderContent .content .middle_column .search_container .search_button {float:right;}
+#genieoHeaderContent .content .middle_column .search_container .search_button input {width:97px; height:43px; border: 0 none; font-family: Georgia; font-size: 22px; color:white; margin-top:5px; background:url('http://storage.conduit.com/Images/Search/homepage/bing-white.png') left top no-repeat; cursor:pointer;}
+
+#genieoHeaderContent .content .middle_column a.more {background:url('../img/more.png') right 6px no-repeat; padding-right:12px; float:right; margin-top:5px;;}
+
+
+#autocomplete {display:none; background:white; border:1px solid #a0a0a0; left: 0; position: absolute; top: 44px; width: 564px; box-shadow: 0 5px 15px -13px;}
+#autocomplete ul {display:block;}
+#autocomplete li {display:block; cursor:default;}
+#autocomplete li div {font: 16px arial,helvetica,clean,sans-serif; font-weight:bold; padding:3px 10px;}
+#autocomplete li div i {font-style:normal; font-weight:normal;}
+#autocomplete li.selected div {/*color:white;*/ background:#D8E5F0;}

@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	html, body { margin:0;padding:0;overflow:hidden; background-color: #181a20;}
+	#container {
+		width:	180px;
+		height:	140px;
+		display: block;
+		background-color: #181a20;
+	}
+	.borderLine {
+		border: 1px solid #272932;
+	}
+	.btn {
+		
+		width:	180px;
+		height:	46px;
+		float: left;
+		cursor: pointer;
+		font-family: arial;
+		font-size: 12px;
+		color: #ffc905;
+		line-height: 44px;
+	}
+	.btnThumb {
+		background-image: url('games_sprite.png');
+		background-repeat: no-repeat;
+		width: 16px;
+		height: 16px;
+		margin: 14px 7px 0 5px;
+		float: left;
+	}
+	#btnFiesta 		{ background-position: 0 0; float: left }
+	#btnProjectPowder		{ background-position: 0 -16px; }
+	#btnLuvinia 		{ background-position: 0 -32px; }
+	
+	.Breaker {float:none; clear:both}
+	</style>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script type="text/javascript" name="conduitApi" src="http://api.conduit.com/BrowserCompApi.js"></script>
+
+	<script type="text/javascript">
+	
+	var REG_ALIAS = 'LaunchUtil.exe',
+		CMD_PARAM = {
+			'btnFiesta'		:	'fiesta',
+			'btnProjectPowder'		:	'projectpowder',
+			'btnLuvinia'		:	'luvinia'
+		},
+        DWN_LINK = {
+            'btnFiesta'		:	'http://fiesta.outspark.com/',
+            'btnProjectPowder'		:	'http://projectpowder.outspark.com/',
+            'btnLuvinia'		:	'http://luvinia.outspark.com/'
+
+        },
+	db = "";
+	
+	$(document).ready(function () {
+		
+		if($.browser.webkit) { // Don't run on chrome
+			db = "ch";
+            handleChrome();
+
+		} else if ($.browser.msie) {
+			db = "ie";
+            bindEvents();
+		}
+		else {
+			db = "ff";
+            bindEvents();
+		}
+
+		});
+	
+	/*
+	 *	Bind GUI Events
+	 */
+	function bindEvents() {
+		$(".btn").click(function () {
+				var btnId = $('span',$(this)).attr('id');
+				launchAction(btnId);
+			});
+			
+		$(".btn").hover(function(){
+			$(this).css('background-color','#272932');
+		},
+		function(){
+			$(this).css('background-color','#181a20');
+		});
+	}
+	
+	function launchAction(btnId) {
+		//var urlonuninstall = UNINSTALL_PAGES[btnId];
+		
+		var cmd_params = "-game=" + CMD_PARAM[btnId] + " -db=" + db;
+		//alert(cmd_params);
+		LaunchExternalProgram(REG_ALIAS, cmd_params, "http://google.com");
+	}
+
+    function handleChrome(){
+        $(".btn").click(function () {
+            var btnId = $('span',$(this)).attr('id');
+            launchURL(btnId);
+        });
+
+        $(".btn").hover(function(){
+                $(this).css('background-color','#272932');
+            },
+            function(){
+                $(this).css('background-color','#181a20');
+        });
+
+    }
+    function launchURL(btnId){
+        var fallbackURL = DWN_LINK[btnId];
+        NavigateInMainFrame(fallbackURL);
+        setTimeout('CloseFloatingWindow()', 400);
+    }
+
+	/*
+	 *	Change the Y offset of the background-position
+	 *	CSS property.
+	 *	
+	 *	Input:	$obj - jQuery object of the element to be changed.
+	 *			intPx - the offset in pixels to set the y-position to.
+	 */
+	
+	</script>
+</head>
+<body>
+	<div id="container">
+		<div class="btn" title="Play WolfTeam"><span class="btnThumb" id="btnFiesta"></span>Play Fiesta Online</div>
+		<div class="Breaker"></div>
+		<div class="borderLine"></div>
+		<div class="Breaker"></div>
+		<div class="btn" title="Play Raklon"><span class="btnThumb" id="btnProjectPowder"></span>Play Project Powder</div>
+		<div class="Breaker"></div>
+		<div class="borderLine"></div>
+		<div class="Breaker"></div>
+		<div class="btn" title="Play Kehanet"><span class="btnThumb" id="btnLuvinia"></span>Play Luvinia</div>
+		
+	</div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<CRR>
+              <DG ID="6353" DES="Liga ACB 2010-11" JO="34" FA="" FE="15-05-2011" DEP="3" TIP="1" FN="CRF_06353_00_34.Xml" FG="CR1_06353.Xml" NFAS="0" NJOR="34" NGRU="0" TEQU="1" DIV="1"></DG>
+              <RES>
+              <RE ID = "1" GR="" CL="6222" EL="Menorca Basquet" CV="6210" EV="Real Madrid" GL="76" GV="91" FP="15-05-2011" HI="12:30" ES="7" EST="Pabellón Menorca" IDPAR="300" MIN="40" CORL="MEN" CORV="RMA" GD="0" CP="" GF="0" HF="" PAISL="ESP" PACOIL="ESP" PAISV="ESP" PACOIV="ESP">
+                            <RCTOS>
+                                          <RC ID="1" MLC="24" MLV="20" />
+                                          <RC ID="2" MLC="11" MLV="23" />
+                                          <RC ID="3" MLC="23" MLV="31" />
+                                          <RC ID="4" MLC="18" MLV="17" />
+                            </RCTOS>
+                            </RE>
+              <RE ID = "2" GR="" CL="6209" EL="CB Granada" CV="6214" EV="Gran Canaria 2014" GL="69" GV="93" FP="15-05-2011" HI="19:00" ES="7" EST="Palacio Municipal de Deportes" IDPAR="306" MIN="40" CORL="GRN" CORV="CAN" GD="0" CP="" GF="0" HF="" PAISL="ESP" PACOIL="ESP" PAISV="ESP" PACOIV="ESP">
+                            <RCTOS>
+                                          <RC ID="1" MLC="17" MLV="29" />
+                                          <RC ID="2" MLC="19" MLV="21" />
+                                          <RC ID="3" MLC="10" MLV="18" />
+                                          <RC ID="4" MLC="23" MLV="25" />
+                            </RCTOS>
+                            </RE>
+              <RE ID = "3" GR="" CL="6216" EL="Regal F.C. Barcelona" CV="6203" EV="Unicaja" GL="79" GV="84" FP="15-05-2011" HI="19:00" ES="7" EST="Palau Blaugrana" IDPAR="305" MIN="10" CORL="BAR" CORV="UNI" GD="1" CP="POB_06353_00_34_06216_06203" GF="0" HF="" PAISL="ESP" PACOIL="ESP" PAISV="ESP" PACOIV="ESP">
+                            <RCTOS>
+                                          <RC ID="1" MLC="22" MLV="21" />
+                                          <RC ID="2" MLC="15" MLV="24" />
+                                          <RC ID="3" MLC="21" MLV="17" />
+                                          <RC ID="4" MLC="21" MLV="22" />
+                            </RCTOS>
+                            </RE>
+              <RE ID = "4" GR="" CL="6220" EL="CAI Zaragoza" CV="6200" EV="Meridiano Alicante" GL="90" GV="86" FP="15-05-2011" HI="19:00" ES="7" EST="Pabellón Príncipe Felipe (Zaragoza)" IDPAR="304" MIN="40" CORL="" CORV="ALI" GD="0" CP="" GF="0" HF="" PAISL="ESP" PACOIL="ESP" PAISV="ESP" PACOIV="ESP">
+                            <RCTOS>
+                                          <RC ID="1" MLC="32" MLV="19" />
+                                          <RC ID="2" MLC="22" MLV="18" />
+                                          <RC ID="3" MLC="11" MLV="22" />
+                                          <RC ID="4" MLC="25" MLV="27" />
+                            </RCTOS>
+                            </RE>
+              <RE ID = "5" GR="" CL="6205" EL="Caja Laboral" CV="7600" EV="Lagun Aro GBC" GL="79" GV="70" FP="15-05-2011" HI="19:00" ES="7" EST="Pabellón Fernando Buesa Arena" IDPAR="303" MIN="40" CORL="TAU" CORV="GBC" GD="0" CP="" GF="0" HF="" PAISL="ESP" PACOIL="ESP" PAISV="ESP" PACOIV="ESP">
+                            <RCTOS>
+                                          <RC ID="1" MLC="19" MLV="21" />
+                                          <RC ID="2" MLC="16" MLV="28" />
+                                          <RC ID="3" MLC="25" MLV="6" />
+                                          <RC ID="4" MLC="19" MLV="15" />
+                            </RCTOS>
+                            </RE>
+              <RE ID = "6" GR="" CL="6217" EL="Baloncesto Fuenlabrada" CV="6204" EV="DKV Joventut" GL="108" GV="81" FP="15-05-2011" HI="19:00" ES="7" EST="Pabellón Fernando Martín" IDPAR="302" MIN="40" CORL="FUE" CORV="JOV" GD="0" CP="" GF="0" HF="" PAISL="ESP" PACOIL="ESP" PAISV="ESP" PACOIV="ESP">
+                            <RCTOS>
+                                          <RC ID="1" MLC="33" MLV="19" />
+                                          <RC ID="2" MLC="29" MLV="16" />
+                                          <RC ID="3" MLC="13" MLV="21" />
+                                          <RC ID="4" MLC="33" MLV="25" />
+                            </RCTOS>
+                            </RE>
+              <RE ID = "7" GR="" CL="6207" EL="Cajasol" CV="6208" EV="Blancos de Rueda Valladolid" GL="98" GV="75" FP="15-05-2011" HI="19:00" ES="7" EST="Palacio de Deportes San Pablo" IDPAR="301" MIN="40" CORL="CSF" CORV="VAL" GD="0" CP="" GF="0" HF="" PAISL="ESP" PACOIL="ESP" PAISV="ESP" PACOIV="ESP">
+                            <RCTOS>
+                                          <RC ID="1" MLC="23" MLV="12" />
+                                          <RC ID="2" MLC="29" MLV="17" />
+                                          <RC ID="3" MLC="15" MLV="24" />
+                                          <RC ID="4" MLC="31" MLV="22" />
+                            </RCTOS>
+                            </RE>
+              <RE ID = "8" GR="" CL="6201" EL="Asefa Estudiantes" CV="6233" EV="Bizkaia Bilbao Basket" GL="68" GV="78" FP="15-05-2011" HI="19:00" ES="7" EST="Palacio de los Deportes de Madrid" IDPAR="299" MIN="40" CORL="EST" CORV="BLB" GD="0" CP="" GF="0" HF="" PAISL="ESP" PACOIL="ESP" PAISV="ESP" PACOIV="ESP">
+                            <RCTOS>
+                                          <RC ID="1" MLC="19" MLV="15" />
+                                          <RC ID="2" MLC="14" MLV="29" />
+                                          <RC ID="3" MLC="20" MLV="10" />
+                                          <RC ID="4" MLC="15" MLV="24" />
+                            </RCTOS>
+                            </RE>
+              <RE ID = "9" GR="" CL="6206" EL="Power E. Valencia" CV="6215" EV="Assignia Manresa" GL="81" GV="68" FP="15-05-2011" HI="19:00" ES="7" EST="Pabellón Fuente San Luis" IDPAR="298" MIN="40" CORL="PAM" CORV="MAN" GD="0" CP="" GF="0" HF="" PAISL="ESP" PACOIL="ESP" PAISV="ESP" PACOIV="ESP">
+                            <RCTOS>
+                                          <RC ID="1" MLC="22" MLV="13" />
+                                          <RC ID="2" MLC="24" MLV="18" />
+                                          <RC ID="3" MLC="19" MLV="12" />
+                                          <RC ID="4" MLC="16" MLV="25" />
+                            </RCTOS>
+                            </RE>
+</RES>
+</CRR>

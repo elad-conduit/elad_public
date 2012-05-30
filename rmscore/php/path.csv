@@ -1,0 +1,6 @@
+team1name,RES.RE[i][\"@attributes\"].CORL
+team2name,RES.RE[i][\"@attributes\"].CORV
+team1score,RES.RE[i][\"@attributes\"].GL
+team2score,RES.RE[i][\"@attributes\"].GV
+time,RES.RE[i][\"@attributes\"].MIN
+period,RES.RE[i][\"@attributes\"].ES

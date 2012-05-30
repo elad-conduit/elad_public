@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd"
+        >
+<html lang="en">
+<script type="text/javascript" language="javascript" src="http://api.conduit.com/BrowserCompApi.js"></script>
+<head>
+    <style>
+        body {
+            margin:0;
+            padding: 0;
+            overflow: hidden;
+        }
+        #welcome {
+            height: 265px;
+            width: 444px;
+            background: url(super_instructions.png) no-repeat;
+        }
+        #closeX {
+            position: absolute;
+            top: 9px;
+            left: 417px;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+    </style>
+    <script>
+        function closeGad(){
+            setTimeout("CloseFloatingWindow();", 1000);
+        }
+    </script>
+</head>
+<body>
+
+
+<div id="welcome"></div>
+<div id="closeX" onclick="closeGad();"></div>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+body { background-color: #e7e7e8; border-top: 3px solid #254095; }
+
+/* Gadgets */
+
+.gad {}
+.gad .gad-wrapper {}
+
+.gad-1 { width: 300px; text-align: center; overflow: hidden; }
+.gad-1 img { text-align: center; }
+.gad-1 #loca { width: 90%; padding: 2px; margin: 15px auto; background-color: #fff; border: 1px solid #356fa4; }
+.gad-1 #search { width: 298px; height: 215px; display: none; position: absolute; background-color: #fff; border: 1px solid #e1e1e1; border-top: 0px; overflow-y: scroll; text-align: left; }
+.gad-1 #search a { display: block; padding: 5px; }
+.gad-1 h2 { width: 100%; height: 34px; background: url('../images/back-h2.gif') top left repeat-x; color: #fff; font-size: 12px; font-weight: bold; padding: 9px 0 0 15px; text-align: left; }
+.gad-1 table { width: 90%; text-align: center; margin: 7px auto 0 auto; border-collapse: collapse; }
+.gad-1 table td { background-color: #fff; border: 1px solid #356fa4; padding: 3px 0; }
+.gad-1 table td.column-1 { border-right: none; padding: 2px; padding-left: 5px; }
+.gad-1 table td.column-2 { border-left: none; text-align: right; padding-right: 5px; }
+
+.gad-1 a { text-decoration: none; }
+.gad-1 a span { font-style: italic; }
+.gad-1 .gad-wrapper { width: 100%; }
+
+.pager { text-align: center; width: 100%; margin-top: 5px; }
+.clickable { color: blue; margin: 0 5px; font-size: 12px; cursor: pointer; }
+.clickable:hover { text-decoration: underline; }
+
+/* End of Gadgets */
+
+#close { width: 100%; text-align: center; position: absolute; bottom: 10px; }
+#close a {}
+#close img { display: inline; }

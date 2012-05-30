@@ -1,0 +1,6 @@
+timeRemaining,games.game[i].minute
+team1,games.game[i].team1
+score1,games.game[i].homepts
+team2,games.game[i].team2
+score2,games.game[i].awaypts
+period,games.game[i].quarter

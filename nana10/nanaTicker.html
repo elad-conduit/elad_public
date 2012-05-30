@@ -1,0 +1,233 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+    <head>
+        <script type="text/javascript" name="conduit" src="http://api.conduit.com/BrowserCompApi.js">
+        </script>
+        <script type="text/javascript" name="jquery" src="http://code.jquery.com/jquery-latest.js">
+        </script>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+        <script type="text/javascript">
+            var object;
+			var contentGroupLength = null;
+			var currentContentGroupNumber = 0;
+			var currentContentGroupElementNumber = 0;
+			var timeoutID = null;
+			var contentGroupItemsLength = 0;
+			var labelImageUrl = "icon.png";
+			var ctid= null;
+			var feedInterval = 60;//in min
+			$.extend({
+                                getUrlVars: function(){
+                                                var vars = [], hash;
+                                                var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+                                                for(var i = 0; i < hashes.length; i++)
+                                                {
+                                                                hash = hashes[i].split('=');
+                                                                vars.push(hash[0]);
+                                                                vars[hash[0]] = hash[1];
+                                                }
+                                                return vars;
+                                },
+                                getUrlVar: function(name){
+                                                return $.getUrlVars()[name];
+                                }
+                });
+			var ctid= $.getUrlVar("ctid");
+			function callAjax()
+			{
+				var rand = Math.random();	
+					$.ajax({
+					async:false,
+					url: "xml2json2.php",
+					dataType : "json",
+					success: function(result)
+					{
+						//console.log(result);
+						jQuery("#news_container").stop();
+						clearTimeout(timeoutID);
+						object = result;//$("body").append(JSON.stringify(result));
+						contentGroupLength = object.IPhoneMainCategory.ContentGroup.length;
+						currentContentGroupNumber = 1;
+						currentContentGroupElementNumber=0;
+						//timeoutID = setTimeout(todoit, 100);
+
+						jQuery("#news_container").stop();
+						clearTimeout(timeoutID);
+						todoit();
+					}
+				});
+			}
+			function openIt(url)
+			{					
+				NavigateInNewTab(url);
+			}
+            $(document).ready(function(){ 
+				jQuery("#news_container").mouseover(function(){	jQuery("#news_container").stop();clearTimeout(timeoutID);});	
+				jQuery("#news_container").mouseleave(function(){ timeoutID = setTimeout(todoit,1000);});
+				$("#labelImage").append('<img src="'+labelImageUrl+'" alt="" style="width:29px;height:19px;" />');
+				
+				var interval = "";
+				//call the feed every 10 min
+				interval = setInterval(callAjax,feedInterval*60000);
+				var rand = Math.random();
+               $.ajax({
+                    async:false,
+                    url: "xml2json2.php",
+                    dataType : "json",
+                    success: function(result)
+                    {
+						//console.log(result);
+                        object = result;//$("body").append(JSON.stringify(result));
+                    }
+                });
+               
+			   contentGroupLength = object.IPhoneMainCategory.ContentGroup.length;
+               timeoutID = setTimeout(todoit, 100);
+            });
+			
+			function todoit()
+            {
+				jQuery("#news_container").html("");
+				jQuery("#news_container").css("right","32px");
+				jQuery("#news_container").css("top","-15px");
+				
+				if(object.IPhoneMainCategory.ContentGroup[currentContentGroupNumber].Element != null)
+				{
+					contentGroupItemsLength = object.IPhoneMainCategory.ContentGroup[currentContentGroupNumber].Element.length;
+					//var title = object.IPhoneMainCategory.ContentGroup[currentContentGroupNumber].Element["@attributes"].Title;
+						if (contentGroupItemsLength)
+						{
+							//var titleFlag=true;
+						}
+						else
+						{
+							var titleFlag=true;
+						}
+					if(contentGroupItemsLength!=null || titleFlag)
+					{
+						if(titleFlag)
+						{
+							var title = object.IPhoneMainCategory.ContentGroup[currentContentGroupNumber].Element["@attributes"].Title;
+							var instanceID = object.IPhoneMainCategory.ContentGroup[currentContentGroupNumber].Element["@attributes"].InstanceID;
+							var serviceID = object.IPhoneMainCategory.ContentGroup[currentContentGroupNumber].Element["@attributes"].ServiceID;
+							var articleURL = "http://www.nana10.co.il/Article/?Articleid="+instanceID+"&sid="+serviceID;
+						}
+						else
+						{
+							var title = object.IPhoneMainCategory.ContentGroup[currentContentGroupNumber].Element[currentContentGroupElementNumber]["@attributes"].Title;
+							var instanceID = object.IPhoneMainCategory.ContentGroup[currentContentGroupNumber].Element[currentContentGroupElementNumber]["@attributes"].InstanceID;
+							var serviceID = object.IPhoneMainCategory.ContentGroup[currentContentGroupNumber].Element[currentContentGroupElementNumber]["@attributes"].ServiceID;							
+							var articleURL = "http://www.nana10.co.il/Article/?Articleid="+instanceID+"&sid="+serviceID+"&toolbar="+ctid;
+						}
+						
+						//jQuery("#news_container").animate({top:0},1000, function(){
+						
+							var len = calculateContentSize(title);
+							
+							//alert(len);
+							jQuery("#news_container").append('<div id="openInNewTab" onclick="openIt(\''+articleURL+'\')" url="'+articleURL+'"></div>');
+							jQuery("#news_container div").html(title);
+							
+							jQuery("#news_container").animate({top:0},1000,function(){
+							
+							timeoutID = setTimeout(function(){
+								if(len>233)
+								{
+									len = -len;
+									jQuery("#news_container").animate({right:len+256},3000, function()
+									{
+										timeoutID = setTimeout(function()
+											{
+												jQuery("#news_container").animate({top:17},1000,function()
+												{
+													timeoutID = setTimeout(todoit,100);
+												});
+											}, 1000);
+									}); //need to change the -200 to the len of the text
+								}
+								else
+								{
+									timeoutID = setTimeout(function(){jQuery("#news_container").animate({top:17},1000,function()
+										{
+											timeoutID = setTimeout(todoit, 500);
+										});
+									},2000);																	
+								}
+							},1000);
+							});
+						
+						
+					}
+					
+					if(currentContentGroupElementNumber < contentGroupItemsLength-1 )
+					{
+						currentContentGroupElementNumber++;
+					}
+					else
+					{
+						currentContentGroupElementNumber=0;
+						if(currentContentGroupNumber < contentGroupLength-1)
+						{
+							currentContentGroupNumber++;
+						}
+						else
+						{
+							currentContentGroupNumber=1;
+						}
+						
+					}																																	
+			 
+				}
+				else					
+				{
+					contentGroupItemsLength = 0;
+					if(currentContentGroupElementNumber < contentGroupItemsLength-1 )
+					{
+						currentContentGroupElementNumber++;
+					}
+					else
+					{
+						currentContentGroupElementNumber=0;
+						if(currentContentGroupNumber < contentGroupLength-1)
+						{
+							currentContentGroupNumber++;
+						}
+						else
+						{
+							currentContentGroupNumber=1;
+						}
+						
+					}			
+					timeoutID = setTimeout(todoit, 100);
+				}
+				
+			}	
+
+			function calculateContentSize(str) 
+			{	
+					var ruler = document.getElementById("ruler");
+					ruler.innerHTML = str;
+					return jQuery("#ruler").innerWidth(); 
+			}
+			
+				
+
+
+        </script>
+        <!-- Hook this up to the HTML UI -->
+
+    </head>
+    <body>
+	<div id="container">
+	<div id="god">
+		<div id="news_container" >
+			
+		</div>
+	<div>
+      <span id="ruler"  style="border:0px;padding:0px;font-size:12px;font-family:arial;"></span>
+	  
+	  <div>
+	 <div id="labelImage"></div>
+    </body>
+</html>

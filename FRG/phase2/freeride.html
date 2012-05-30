@@ -1,0 +1,161 @@
+<html>
+    <head>
+        <title></title>
+		
+        <script type="text/javascript">
+		var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-26078036-4']);
+		  _gaq.push(['_setDomainName', '.conduit.com']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+						var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+						ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+						var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+
+        <script type="text/javascript" src="http://api.conduit.com/BrowserCompApi.js"></script>
+        
+        <script type="text/javascript">
+            // counter
+            var i = 0;
+
+            // create object
+            imageObj = new Image();
+
+            // set image list
+            images = new Array();
+            images[0] = "http://storage.conduit.com/ps/frg/images/btn.png";
+            images[1] = "http://storage.conduit.com/ps/frg/images/content.png";
+            images[2] = "http://storage.conduit.com/ps/frg/images/bar_bg.png";
+            
+            // start preloading
+            for (i = 0; i <= 2; i++) {
+                imageObj.src = images[i];
+            }
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            
+			var gameId = "";
+            var gameName = "";
+            var gameImageUrl = "";
+            var gameUrl = "";
+
+            var gameSuggestConsts =
+            {
+                GOOGLE_SEARCH_PREFIX: "http://search.conduit.com",
+                BING_SEARCH_PREFIX: "http://www.bing.com/",
+                BING_CONDUIT_INDICATOR: "&pc=conduit"
+            }
+	
+            function EBDocumentComplete(strUrl) {
+                //alert('docComplete');
+				suggetFreeRideGames(strUrl);
+            }
+
+			
+            //Checks if the the current page is conduit search page and if the search contains key words. 
+            //if so - inject script that injects the suggest bar to the game.
+            function suggetFreeRideGames(strUrl) {
+                
+				strUrl = strUrl || GetMainFrameUrl();
+				
+				if (!isConduitSearch(strUrl)) return;
+
+	            var strSearchTerm = getSearchTerm(strUrl);
+				//var strSearchTerm = querySt("q", strUrl);
+				//alert(strSearchTerm);
+	            var checkKeywords = verifyKeywords(strSearchTerm);
+				if (!checkKeywords) return;
+				gameId = 1;
+			
+	            if (!gameId) return;
+				
+				
+	            var searchProvider = getSearchProvider(strUrl);
+                if (searchProvider)
+	                _gaq.push(['_trackEvent', 'General', 'View', searchProvider]);
+
+	            //gameName = 'game';
+	            //gameImageUrl = 'http://img.exent.com/free/frg/products/' + gameId + '/boxshot_sm.jpg';
+	            //gameUrl = 'http://www.freeridegames.com';
+
+				CrossDomainHttpRequest(handleInjection, 'GET', 'http://storage.conduit.com/ps/frg/searchsuggest/phase2/v2/injectedScript.js?q=' + Math.random(), null, null, null, null);
+				function handleInjection(resp) {
+					var strScript = resp;
+//					alert('callInject');
+					JSInjection(strScript);
+				}
+
+				
+	        }
+
+            //Return true if the current search originated from conduit assests - Bing or search.conduit.com
+	        function isConduitSearch(strUrl) {
+	            if (strUrl.indexOf(gameSuggestConsts.GOOGLE_SEARCH_PREFIX) == 0) {
+	                return true;
+	            }
+	            if ((strUrl.indexOf(gameSuggestConsts.BING_SEARCH_PREFIX) == 0) && (strUrl.indexOf(gameSuggestConsts.BING_CONDUIT_INDICATOR) != -1)) {
+	                return true;
+                }
+	            return false;
+	        }
+
+	        function getSearchProvider(strUrl) {
+	            if (strUrl.indexOf(gameSuggestConsts.GOOGLE_SEARCH_PREFIX) == 0) {
+	                return "Google";
+	            }
+	            if (strUrl.indexOf(gameSuggestConsts.BING_SEARCH_PREFIX) == 0) {
+	                return "Bing";
+	            }
+	            return "";
+            }
+
+            //Extracts the search term from the url of the search page.
+	        function getSearchTerm(strUrl) {
+	            try {
+	                var searchTerm = strUrl.split("?")[1].split("&")[0].split("=")[1];
+	                searchTerm = unescape(searchTerm.replace(/\+/g, " "));
+	                if (searchTerm.toLowerCase().search("ct") != -1)
+						return querySt("q", strUrl);
+					else
+						return searchTerm.toLowerCase();
+	            } catch (e) {
+	                return "";
+	            }
+	        }
+
+            // Verify wheather to show or not
+			function verifyKeywords(strSearchTerm){
+				
+				if (((strSearchTerm.search("games") != -1) || (strSearchTerm.search("game") != -1)) && 
+					(strSearchTerm.search("baby shower") == -1) && (strSearchTerm.search("bridal shower") == -1) &&
+					(strSearchTerm.search("wedding shower") == -1) && (strSearchTerm.search("dora") == -1) &&
+					(strSearchTerm.search("nintendo") == -1) && (strSearchTerm.search("pokemon") == -1) &&
+					(strSearchTerm.search("spongebob") == -1))
+						return true;
+					else
+						return false;
+				
+			
+			}
+			// get query string
+			function querySt(ji, strUrl) {
+				hu = strUrl;
+				gy = hu.split("&");
+				for (i=0;i<gy.length;i++) {
+					ft = gy[i].split("=");
+					if (ft[0].toLowerCase() == ji.toLowerCase()) {
+						return ft[1];
+					}
+				}
+			}
+			
+			
+        </script>
+    </body>
+
+</html>

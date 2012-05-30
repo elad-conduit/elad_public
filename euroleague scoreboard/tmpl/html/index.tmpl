@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="/Apps/scoreboard/css/html/index.css" />
+                <script language="JavaScript" type="text/javascript" src="http://api.conduit.com/BrowserCompApi.js"></script>
+        	<script language="JavaScript"  src="http://code.jquery.com/jquery-latest.js"></script>
+        	<script language="JavaScript"  src="http://json-sans-eval.googlecode.com/svn/trunk/src/json_sans_eval.js"></script>
+        	<script language="JavaScript">
+
+        		function EBDocumentComplete() {
+
+				$.ajaxSetup({ cache: false });
+				$.getJSON('/Apps/scoreboard/php/index.php', function(json) {
+					$('.now').html(json.now); 
+					$('.timeRemaining').html(json.match.time.remaining); 
+					$('.team1').html(json.match.teams.team[0].name); 
+					$('.score1').html(json.match.teams.team[0].score); 
+					$('.team2').html(json.match.teams.team[1].name);
+					$('.score2').html(json.match.teams.team[1].score); 
+				});
+
+			}
+
+			$(document).ready(function() {
+				interval = setInterval('EBDocumentComplete()', 1*1000);
+			});
+
+		</script>
+		<title>ScoreBoard</title>
+	</head>
+	<body>
+
+		<div id="wrapper">
+			<div id="content"> 
+				<table border="0">
+					<tr class="date">
+						<td colspan="2" align="middle"><span class="now"></span></td>
+					</tr>
+					<tr>
+						<td colspan="2"><hr></td>
+					</tr>
+					<tr>
+						<td><span id="team" class="team1"></span></td>
+						<td><span id="team" class="team2"></span></td>
+					</tr>
+					<tr>
+						<td align="middle"><span id="score" class="score1"></span></td>
+						<td align="middle"><span id="score" class="score2"></span></td>
+					</tr>
+					<tr>
+						<td colspan="2"><hr></td>
+					</tr>
+					<tr>
+						<td colspan="2" align="middle"><span class="timeRemaining"></span>&nbsp;<span class="white">remaining</span></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+	</body>
+</html>

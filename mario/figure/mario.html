@@ -1,0 +1,198 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd"
+    >
+<html lang="en">
+<head>
+	<script type="text/javascript" language="javascript" src="http://api.conduit.com/BrowserCompApi.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" language="javascript" src="animate.js"></script>
+    <style>
+        body {
+            margin:0;
+            padding: 0;
+            overflow: hidden;
+        }
+        #container {
+			position: relative;
+		}
+		#figure {
+            height: 24px;
+            width: 66px;
+			position: absolute;
+			top: 1px;
+			left: 0px;
+			cursor: pointer;
+        }
+
+    </style>
+    <script>
+    var APP_PATH = function(){var a=document.location.toString().split("#")[0];var b=a.substring(0,a.lastIndexOf("/"))+"/";return b}();
+	var GK_WE_NAME = "GK_MARIO_WE_SENT";
+	var GK_USAGE_NAME = "GK_MARIO_USAGE_SENT";
+	var GK_USAGE_VALUE = "GK_MARIO_USAGE_VALUE_SENT";
+	var GK_FIGURE_VALUE = "GK_MARIO_FIGURE_VALUE";
+	
+	// counter of the usage the user did
+	var ACTIONS = 0;
+
+	// interval to check the usage
+	var CHECK_USAGE = 60*60*24;
+
+	function showWelcomeExperience () {
+		var gk = RetrieveGlobalKey(GK_WE_NAME);
+		//alert(gk);
+	   if (gk == null || gk == '')
+	   {
+
+			LaunchGadget(APP_PATH + "instructions.html", 444, 265,"openposition=offset:(0;28),savelocation=no,saveresizedsize=no,resizable=no,scrollbars=no,titlebar=no,closeonexternalclick=yes,closebutton=no");
+			StoreGlobalKey(GK_WE_NAME, 'sent');
+           //alert('sent welcome experience');
+	   }
+	
+	}
+	
+	function EBToolbarUsage(){
+		//alert('tb usage');
+		var gk = RetrieveGlobalKey(GK_USAGE_VALUE);
+		//alert("usage:"+gk);
+		if (gk == null || gk == '')
+		{
+			StoreGlobalKey(GK_USAGE_VALUE, '0');
+		}
+		else
+		{
+			ACTIONS = parseInt(gk)+1;
+			StoreGlobalKey(GK_USAGE_VALUE, ACTIONS.toString());
+		}
+	}
+	
+	function checkUsage(){
+		//alert('check usage');
+		var gk = RetrieveGlobalKey(GK_USAGE_VALUE);
+		//alert('check usage - cur count' + gk);
+        var figure = RetrieveGlobalKey(GK_FIGURE_VALUE);
+        //alert("figure:" + figure + " usage: " + gk);
+        if (parseInt(gk) >= 5)
+		{ // level up
+
+            //alert('cur figure: ' + figure);
+            if (figure == "small")
+			{
+                animationManager.smallToBig();
+				StoreGlobalKey(GK_FIGURE_VALUE, "big");
+
+                _gaq.push(['_trackEvent', 'FigureUsageConduit', 'Change', 'SmallToBig']);
+			}
+			else if (figure == "big")
+			{
+                animationManager.bigToSuper()
+                StoreGlobalKey(GK_FIGURE_VALUE, "super");
+
+                _gaq.push(['_trackEvent', 'FigureUsageConduit', 'Change', 'BigToSuper']);
+			}
+		}
+        else
+		{ // level down
+            //alert('cur figure: ' + figure);
+			if (figure == "super")
+			{
+                $("#figure").css('background', 'url(img/big_btn.png)');
+				StoreGlobalKey(GK_FIGURE_VALUE, "big");
+                _gaq.push(['_trackEvent', 'FigureUsageConduit', 'Change', 'SuperToBig']);
+			}
+			else if (figure == "big")
+			{
+                $("#figure").css('background', 'url(img/small_btn.png)');
+				StoreGlobalKey(GK_FIGURE_VALUE, "small");
+                _gaq.push(['_trackEvent', 'FigureUsageConduit', 'Change', 'BigToSmall']);
+			}
+
+		}
+        StoreGlobalKey(GK_USAGE_VALUE, "0");
+        // in case the browser will remain open
+        setTimeout('checkUsage()',CHECK_USAGE*1000);
+	}
+	
+	$(document).ready(init);
+	function init(){
+        animationManager.init('figure');
+        //alert('ready000');
+		// first time
+		showWelcomeExperience(); 
+		// get the figure from GK
+		var figure = RetrieveGlobalKey(GK_FIGURE_VALUE);
+		if (figure == null || figure == '')
+	   {
+		    //alert('initiate small figure state');
+           $('#figure').css('background','url(img/small_btn.png)');
+			// store the figure type at the GK
+			StoreGlobalKey(GK_FIGURE_VALUE, 'small');
+	   }
+        else
+        {
+            //alert('init cur figure: ' + figure);
+            $("#figure").css('background', 'url(img/' + figure + '_btn.png)');
+
+        }
+		// check usage
+		var gk = RetrieveGlobalKey(GK_USAGE_NAME);
+		//alert("try to retrieve old usage:" + gk);
+		if (gk == null || gk == '')
+	   {
+			var TIME_STAMP = new Date();
+            //alert('no usage found: new usage inserted: '+TIME_STAMP);
+			StoreGlobalKey(GK_USAGE_NAME, TIME_STAMP.getTime().toString());
+			gk = RetrieveGlobalKey(GK_USAGE_NAME);
+
+			//setTimeout('checkUsage()',86400*1000);
+			setTimeout('checkUsage()',CHECK_USAGE*1000);
+	   }
+	   else
+	   {
+           //alert('found old usage');
+			var cur_time = new Date();
+			var difference = cur_time.getTime() - gk;
+			setTimeout('checkUsage()',(8640 * 1000) - difference);
+        }
+
+	}
+
+    function openInstructions(){
+        var figure = RetrieveGlobalKey(GK_FIGURE_VALUE);
+        if (figure == "small"){
+            _gaq.push(['_trackEvent', 'FigureUsageConduit', 'Click', 'SMALL']);
+            LaunchGadget(APP_PATH + "instructions.html", 444, 265,"openposition=offset:(0;28),savelocation=no,saveresizedsize=no,resizable=no,scrollbars=no,titlebar=no,closeonexternalclick=yes,closebutton=no");
+        }
+        else if(figure == "big"){
+            _gaq.push(['_trackEvent', 'FigureUsageConduit', 'Click', 'BIG']);
+            LaunchGadget(APP_PATH + "bigInstructions.html", 444, 265,"openposition=offset:(0;28),savelocation=no,saveresizedsize=no,resizable=no,scrollbars=no,titlebar=no,closeonexternalclick=yes,closebutton=no");
+        }
+        else if(figure == "super"){
+            _gaq.push(['_trackEvent', 'FigureUsageConduit', 'Click', 'SUPER']);
+            LaunchGadget(APP_PATH + "superInstructions.html", 444, 265,"openposition=offset:(0;28),savelocation=no,saveresizedsize=no,resizable=no,scrollbars=no,titlebar=no,closeonexternalclick=yes,closebutton=no");
+        }
+
+    }
+
+    </script>
+</head>
+<body onload="">
+	<div id="container">
+       <div id="figure" onclick="openInstructions();"></div>
+
+	</div>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-26078036-15']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+</body>
+</html>

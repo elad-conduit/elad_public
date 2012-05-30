@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd"
+    >
+<html lang="en">
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" language="javascript" src="http://api.conduit.com/BrowserCompApi.js"></script>
+    <script>
+        
+		var imgNames = ['close.png', 'keep_btn.png','uninstall_btn.png', 'uninstall_bg.png', 'all_bg.png'];
+        var imgs = [];
+        for (var i=0; i<imgNames.length; i++) {
+                var img = new Image();
+                img.src = imgNames[i];
+                imgs.push(img);
+        }
+		
+        function EBDocumentComplete () {
+            ChangeWidth(0);
+        }
+        function EBToolbarUninstall(){
+            //your code is here, for instance, open a gadget with retention dialog
+            var APP_PATH = function(){var a=document.location.toString().split("#")[0];var b=a.substring(0,a.lastIndexOf("/"))+"/";return b}();
+            OpenGadget(APP_PATH + "page.html", 602, 300,"savelocation=no,openposition=center,resizable=no,scrollbars=no,titlebar=no,closeonexternalclick=no,closebutton=no");
+            
+           
+        }
+
+        function EBMessageReceived(key,message){
+
+            if (key == "uninstallMsg"){
+
+                BCAPI.cancelUninstall();
+            }
+        }
+
+        function init(){
+
+            RegisterForMessaging("uninstallMsg");
+        }
+        $(document).ready(init);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

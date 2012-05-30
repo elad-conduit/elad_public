@@ -1,0 +1,118 @@
+    $('#searchInput').keyup(function() {
+			
+					var robert = $(this).val();
+				
+					if (robert.length >= 3) {
+					getLocInfo(robert);
+				}
+			});
+		
+			$('#searchInput').keypress(function(event) {
+				
+						
+							var robert = $('#searchInput').val();
+							if (robert.length >= 3) {
+						    getLocInfo(robert);
+							
+			
+				}
+     });
+     
+     function setCurrentCity(city, state, country, loc)
+          {
+			 
+			addLocation(city, state, country, loc)
+	  }
+
+
+	  	var storedLocations;
+	var currentLocation = '3'; // TEST
+	
+	
+	
+	function displayStoredLocations() {
+		$("#searchResults").css('display', "none");
+		$("#strlocationResults").html("");
+		var city;
+		var country;
+		var state;
+		var loc;
+		var loctext = "";
+		
+		var newline = "";
+	
+		alert('hello');
+		for (var i=0; i<storedLocations.length; i++)
+		{	
+			var curLoc = storedLocations[i];
+			city = curLoc.name;
+			state = curLoc.region;
+			country = curLoc.country;
+			loctext = city + ", " + state + ", " + country;
+			newline = "<div class='removebutton' onclick='removeLocation(" + i + ");'><div class='addtext'";
+			newline += "onclick='setSelectedLocation(\"" + curLoc.locID + "\"); if (typeof event.stopPropagation != \"undefined\") {"
+			newline += "event.stopPropagation(); } if (typeof event.cancelBubble != \"undefined\") { event.cancelBubble = true;}'>" + loctext + "</div></div>";
+			$("#strlocationResults").append(newline);
+			alert(newline);
+		}
+	
+	}
+	function saveStoredLocations() {
+		var s = JSON.stringify(storedLocations);
+		StoreGlobalKey('storedLocations', s);
+	}
+	
+	function addLocation(name, region, country, locID) {
+		var newLoc = {'name': name, 'region': region, 'country': country, 'locID': locID.toString()};
+		var locationIdx = isLocationExists(newLoc['locID']);
+		if (locationIdx == -1) {
+			storedLocations.push(newLoc);
+			saveStoredLocations();
+			
+		}
+		
+		setSelectedLocation(newLoc.locID);
+	}
+	
+	function removeLocation(idx) {
+		
+		if (idx >= storedLocations.length) return;
+		
+		delete storedLocations[idx];
+		var s = JSON.stringify(storedLocations);
+		s = s.replace(/null,/g, '');
+		s = s.replace(/,null/g, '');
+		s = s.replace(/null/g, '');
+		storedLocations = eval(s);
+		saveStoredLocations();
+		
+		if (storedLocations.length == 0) { // all locations deleted, change toolbar to "Search for location"
+			StoreGlobalKey('selectedLocation', '');
+		} else {
+			var selectedLocation = RetrieveGlobalKey('selectedLocation');
+			var selectedLocation = currentLocation; //test
+			if (selectedLocation != null && selectedLocation != '') {
+				if (isLocationExists(selectedLocation) == -1) { // current location deleted, change to next location in line
+					StoreGlobalKey('selectedLocation', storedLocations[0].locID);
+					currentLocation = '1';
+				}
+			}
+		}
+		displayStoredLocations();
+	}
+	
+	function setSelectedLocation(locID) {
+		
+		
+		StoreGlobalKey('selectedLocation', locID);
+		setTimeout(CloseFloatingWindow, 200);
+		
+	}
+	
+	function isLocationExists(locID) {
+		for (var i=0; i<storedLocations.length; i++) {
+			if (storedLocations[i].locID == locID)
+				return i;
+		}
+		return -1;
+	}
