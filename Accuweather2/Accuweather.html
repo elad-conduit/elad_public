@@ -15,7 +15,7 @@
 								farencelc = "0";
 								getLocInfo()
 							});
-                             
+
                             function getLocInfo()
                             {
                                $.ajax({ type:"GET", url: "proxy.php?loc=" + currentLoc + "&metric=" + farencelc, dataType: "xml", success: parseXML });
