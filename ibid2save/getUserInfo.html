@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title></title>
+
+    <style type="text/css">
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #container {
+        }
+    </style>
+    <script type="text/javascript" name="conduitApi" src="http://api.conduit.com/BrowserCompApi.js"></script>
+    <script type="text/javascript" src="js/services.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(
+            function(){
+
+                setupMessaging();
+            }
+        );
+
+        function getUserInfo(key){
+            //alert(key);
+            try{
+                var Customer = $.parseJSON(RetrieveGlobalKey(key));
+                //alert(Customer.cmd5);
+
+            var xml = "<xml><trantype>getuserinfo</trantype><tranparms><customerid>" + Customer.cid +"</customerid><securityKey>" + Customer.cmd5 + "</securityKey></tranparms></xml>";
+
+            CrossDomainHttpRequest(handleResponse, 'GET', Services.getUserInfo + xml, null, null, null, null);
+
+            }
+            catch(e){
+                alert("catch: " +e);
+
+            }
+        }
+
+        function handleResponse(resp)
+        {
+            //alert("2" + resp);
+            var $respXML = $($.parseXML(resp.toLowerCase()).childNodes[0]);
+            //alert($respXML.text());
+            alert("Welcome: " + $respXML.find('username').text() + " bids: " + $respXML.find('bidsnumber'));
+        }
+
+
+        function EBMessageReceived(key,message){
+            //alert('recieved');
+            getUserInfo(key);
+        }
+
+
+
+
+        function setupMessaging(){
+            if($.browser.webkit) { //BCAPI SendMessage doesn't work in chrome webtoolbar - use global storage to pass messages
+                window.EBGlobalKeyChanged = function(key, msg) {
+                    if(key !== 'GK_IBID_CID')
+                        return;
+
+                    getUserInfo(msg);
+                };
+            }
+            else
+            { //FF and IE use normal messaging
+                    window.EBMessageReceived = function (key, msg) {
+
+                        getUserInfo(msg);
+                };
+
+                RegisterForMessaging('GK_IBID_CID');
+            }
+        }
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+<div id="container">
+</div>
+</body>
+</html> 

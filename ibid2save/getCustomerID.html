@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title></title>
+
+    <style type="text/css">
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #container {
+        }
+    </style>
+    <script type="text/javascript" name="conduitApi" src="http://api.conduit.com/BrowserCompApi.js"></script>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/MD5.js"></script>
+    <script type="text/javascript">
+
+        function sendIbid2saveMessage(Customer) {  //BCAPI SendMessage doesn't work in chrome webtoolbar - use global storage to pass messages
+            if($.browser.webkit) {
+                StoreGlobalKey(GK_CID_NAME, JSON.stringify(Customer));
+            }
+            else {
+
+                StoreGlobalKey(GK_CID_NAME, JSON.stringify(Customer));
+                SendMessage(GK_CID_NAME, Customer);
+            }
+        }
+        var GK_CID_NAME = "GK_IBID_CID";
+
+        var URL_PARAMS=function(){var a={};var b=window.location.search.substring(1);var c=b.split("&");for(var d=0;d<c.length;d++){var e=c[d].split("=");if(typeof a[e[0]]==="undefined"){a[e[0]]=e[1]}else if(typeof a[e[0]]==="string"){var f=[a[e[0]],e[1]];a[e[0]]=f}else{a[e[0]].push(e[1])}}return a}();
+        //alert('window.location: ' + window.location + '\nwindow.location.search: ' + window.location.search);
+
+        $(document).ready(function () {
+            setTimeout(function(){
+                //alert(GetToolbarId());
+                var Customer = {
+                cid : URL_PARAMS.customerid,
+                cmd5 : hex_md5(URL_PARAMS.customerid+"ibid2save")
+                };
+
+                sendIbid2saveMessage(Customer);
+
+                CloseFloatingWindow();
+            }, 1000)
+
+
+        });
+
+
+
+
+
+    </script>
+</head>
+<body>
+<div id="container">
+</div>
+</body>
+</html> 

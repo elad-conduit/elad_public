@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title></title>
+
+    <style type="text/css">
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #404041;
+        }
+
+        .btnContainer {
+            float: left;
+            width: 85px;
+            height: 20px;
+            top: 4px;
+            cursor: pointer;
+        }
+        #myAccountFigure{
+            position: absolute;
+            top: 4px;
+            left: 2px;
+            width: 13px;
+            height: 12px;
+            background: url('images/sprite_icons.png') 0 13px;
+        }
+        #logoutFigure{
+            position: absolute;
+            top: 23px;
+            left: 4px;
+            width: 13px;
+            height: 12px;
+            background: url('images/sprite_icons.png') 0 -83px;
+        }
+        .btnContainer:hover .leftBtn,.btnContainer:hover .textBtn, .btnContainer:hover .rightBtn
+        {
+            background-position: 0 -20px;
+        }
+        .leftBtn {
+            float: left;
+            height: 20px;
+            width: 5px;
+            background: url('images/green_left_btn.png') no-repeat;
+        }
+        .textBtn {
+            height: 20px;
+            padding: 1px 21px;
+            font: 10px arial, sans-serif;
+            float: left;
+            background: url(images/green_center_btn.png) 0 0 repeat-x;
+            line-height: 16px;
+        }
+        .rightBtn{
+            float: left;
+            height: 20px;
+            width: 5px;
+            background: url('images/green_right_btn.png') no-repeat;
+        }
+
+        .leftBtnBlue {
+            background: url('images/blue_left_btn.png') no-repeat;
+        }
+        .textBtnBlue {
+            background: url(images/blue_center_btn.png) 0 0 repeat-x;
+            padding: 1px 8px 0 12px;
+        }
+        .rightBtnBlue{
+            background: url('images/blue_right_btn.png') no-repeat;
+        }
+        .breaker {
+            float: none;
+            clear: both;
+
+        }
+    </style>
+    <script type="text/javascript" src="js/services.js"></script>
+    <script type="text/javascript" name="conduitApi" src="http://api.conduit.com/BrowserCompApi.js"></script>
+    <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
+    <script type="text/javascript">
+        function logout(){
+            CrossDomainHttpRequest(function(resp){
+                DeleteGlobalKey('GK_IBID_CID');
+                RefreshComponentById('129819766580449794');
+                CloseFloatingWindow();
+            }, 'GET', Services.logout, null, null, null, null);
+        }
+        function myAccount(){
+            NavigateInMainFrame(Services.myAccount);
+            CloseFloatingWindow();
+        }
+    </script>
+</head>
+<body>
+<div id="container">
+    <div class="btnContainer" id="myAccount" onclick="myAccount();">
+        <div class="leftBtn leftBtnBlue"></div>
+        <div id="myAccountFigure"></div>
+        <div class="textBtn textBtnBlue">My Account</div>
+        <div class="rightBtn rightBtnBlue"></div>
+    </div>
+    <div class="breaker"></div>
+    <div class="btnContainer" id="logout" onclick="logout();">
+        <div class="leftBtn"></div>
+        <div id="logoutFigure"></div>
+        <div class="textBtn">Logout</div>
+        <div class="rightBtn"></div>
+    </div>
+</div>
+</body>
+</html> 
