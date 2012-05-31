@@ -3,6 +3,8 @@ Ibid2save/password
 
 Dev site user account as below:
 aurora@infinitenine.com/password
+or
+aurora@huamarketing.com.cn/password
 
 http://dev.ibid2save.com/toolbar/logout
 

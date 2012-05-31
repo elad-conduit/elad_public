@@ -17,9 +17,10 @@ var Ibid2save = (function(){
     // return username and bids
     function getUserInfo(key){
         try{
+            debugger;
             CustomerKey = key;
             Customer = $.parseJSON(RetrieveGlobalKey(CustomerKey));
-            alert(Customer.cid);
+            //alert(Customer.cid);
 
             var xml = encodeURIComponent("<xml><trantype>getuserinfo</trantype><tranparms><customerid>" + Customer.cid +"</customerid><securityKey>" + Customer.cmd5 + "</securityKey></tranparms></xml>");
             //alert('API call: ' + Services.getUserInfo + xml);

@@ -8,6 +8,7 @@
             margin: 0;
             padding: 0;
             overflow: hidden;
+            height: 26px;
         }
 
         .btnContainer {
@@ -24,7 +25,7 @@
             left: 3px;
             width: 13px;
             height: 12px;
-            background: url('images/sprite_icons.png') 0 -122px;
+            background: url('images/sprite_icons.png') 0 -147px;
         }
         .btnContainer:hover .leftBtn,.btnContainer:hover .textBtn, .btnContainer:hover .rightBtn
         {
@@ -37,9 +38,9 @@
             background: url('images/blue_left_btn.png') no-repeat;
         }
         .textBtn {
-            height: 20px;
-            padding: 1px 8px 0 13px;
-            font: 10px arial, sans-serif;
+            height: 18px;
+            padding: 2px 8px 0 13px;
+            font: 11px arial, sans-serif;
             float: left;
             background: url(images/blue_center_btn.png) 0 0 repeat-x;
             line-height: 16px;
@@ -64,7 +65,7 @@
         //$(document).ready();
 
         function openGad(){
-            LaunchGadget(Services.featured, 700, 350,"openposition=offset:(0;28),savelocation=no,saveresizedsize=no,resizable=no,scrollbars=no,titlebar=no,closeonexternalclick=yes,closebutton=no");
+            LaunchGadget(Services.featured, 615, 360,"openposition=offset:(0;28),savelocation=no,saveresizedsize=no,resizable=no,scrollbars=no,titlebar=no,closeonexternalclick=yes,closebutton=no");
             NavigateInNewTab()
 
         }

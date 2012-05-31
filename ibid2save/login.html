@@ -9,6 +9,7 @@
             margin: 0;
             padding: 0;
             overflow: hidden;
+            height: 26px;
 
         }
         #loginLoader {
@@ -32,7 +33,7 @@
             left: 2px;
             width: 13px;
             height: 12px;
-            background: url('images/sprite_icons.png') 0 13px;
+            background: url('images/sprite_icons.png') 0 37px;
         }
         .btnContainer:hover .leftBtn,.btnContainer:hover .textBtn, .btnContainer:hover .rightBtn
         {
@@ -46,7 +47,7 @@
             background: url('images/green_left_btn.png') no-repeat;
         }
         .textBtn {
-            height: 20px;
+            height: 16px;
             padding: 2px 11px;
             font: 11px arial, sans-serif;
             float: left;
@@ -85,8 +86,10 @@
             $('#loginLoader').attr('src', Services.login);
 
             // login button
+            $('#openLogin').unbind('click');
             $('#openLogin').click(function(){
-                LaunchGadget(Services.login, 444, 265,"openposition=offset:(0;28),savelocation=no,saveresizedsize=no,resizable=no,scrollbars=no,titlebar=no,closeonexternalclick=yes,closebutton=no");
+                //
+                LaunchGadget(APP_PATH + 'loginFrame.html', 506, 273,"openposition=offset:(0;28),savelocation=no,saveresizedsize=no,resizable=no,scrollbars=no,titlebar=no,closeonexternalclick=yes,closebutton=no");
             });
 
             // check if logged
@@ -102,9 +105,9 @@
             if($.browser.webkit) { //BCAPI SendMessage doesn't work in chrome webtoolbar - use global storage to pass messages
                 window.EBGlobalKeyChanged = function(key, msg) {
                     //alert('GK changed');
-                    if(key !== 'GK_IBID_CID')
+                    if(key != 'GK_IBID_LOGIN')
                         return;
-
+                    StoreGlobalKey('GK_IBID_CID', msg);
                     Ibid2save.getUserInfo('GK_IBID_CID');
 
                 };
@@ -133,7 +136,7 @@
                 },100);
             $('#openLogin').unbind('click');
             $('#openLogin').click(function(){
-                LaunchGadget(APP_PATH + "loggedMenu.html", 83, 42,"openposition=offset:(0;28),savelocation=no,saveresizedsize=no,resizable=no,scrollbars=no,titlebar=no,closeonexternalclick=yes,closebutton=no");
+                LaunchGadget(APP_PATH + "loggedMenu.html", 85, 42,"openposition=offset:(0;28),savelocation=no,saveresizedsize=no,resizable=no,scrollbars=no,titlebar=no,closeonexternalclick=yes,closebutton=no");
             });
         }
     </script>
