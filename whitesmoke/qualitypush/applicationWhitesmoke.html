@@ -1,0 +1,106 @@
+<html>
+    <head>
+	<script type="text/javascript" src="http://api.conduit.com/BrowserCompApi.js"></script>
+      	<script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script type="text/javascript">
+
+        </script>
+    </head>
+
+    <body onload="RegForMess()">
+        <script type="text/javascript">
+        var inserted= false;
+        var key = "";
+	var user_search_val = "";
+	/*$(document).ready(function () {
+	//  ChangeWidth(150);
+	});*/
+
+
+            function EBMessageReceived(nickname, msg)
+	    {
+		//alert("GOT MESS: " + msg);
+                if (msg=='***ws_dictionary***')
+                {
+                    SendMessage("ws_open_app_key", "***dictionary*** " + user_search_val);
+                }
+		else
+		{
+		    if (msg=='***ws_translate***')
+		    {
+			SendMessage("ws_open_app_key", "***translate*** " + user_search_val);
+		    }
+		    else
+		    {
+			if (msg=='***ws_check_text***')
+			{
+			    SendMessage("ws_open_app_key", "***check*** " + user_search_val);
+			}
+			else
+			{
+			   // alert(msg);
+			    user_search_val = msg.toString();
+			    StoreGlobalKey("first_time_search", "1");
+			    key=RetrieveGlobalKey("first_time_search");
+			}
+		    }
+		} 
+            }
+            
+
+	
+            function EBDocumentComplete() {
+                key = RetrieveGlobalKey("first_time_search");
+            //    alert("KEY: " + key);
+                if (key ==null || key=="")
+                {
+                    inserted=true;
+                    suggetWhiteSmokeNote();
+                }
+            }
+
+			
+            //Checks if the the current page is conduit search page and if the search contains key words. 
+            //if so - inject script that injects the suggest bar to the game.
+            function suggetWhiteSmokeNote() {
+                ChangeWidth(1);
+               var strInject = "(function () {var head= document.getElementsByTagName('head')[0];" + 
+			"var s  = document.createElement('script');" + 
+			"s.type = 'text/javascript';" +
+			"s.src  = 'http://api.conduit.com/ToolbarApi.js';" +
+			"head.appendChild(s);" +
+		    "})();";
+		//JSInjection("alert('hello')");
+		strInject += "(function () {var head= document.getElementsByTagName('head')[0];" + 
+			"var script          = document.createElement('script');" + 
+			"script.type        = 'text/javascript';" +
+			"script.src           = 'http://storage.conduit.com/PS/Apps/WhiteSmoke/allcodetoinject.js';" +
+			"head.appendChild(script);" +
+		    "})();";
+
+
+
+		JSInjection(strInject);
+//alert("injected!");
+	
+
+                		
+	    }
+
+
+	    function clearGK() {
+		DeleteGlobalKey("first_time_search");
+		alert('Global key deleted!');
+	    }
+		
+	    function RegForMess () {
+
+		RegisterForMessaging("ws_get_mess_from_page");
+	    }
+        </script>
+            
+          <!--  <button onclick="clearGK()" style="margin-top:0;width: 100px; height: 26px;">Clear Key</button>-->
+
+    </body>
+
+</html>

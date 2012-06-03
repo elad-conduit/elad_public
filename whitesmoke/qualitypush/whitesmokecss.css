@@ -1,0 +1,99 @@
+        #WS_popup_container {
+            background-image: url("http://storage.conduit.com/PS/whitesmoke/bg_welcome.png");
+            width: 488px;
+            height: 279px;
+            font-family: arial;
+            display: none;
+            float: left;
+            color: black;
+            z-index: 999999999;
+            text-align: left;
+            direction: ltr;
+        }
+        #WS_popup_title {
+            color: #0b9fe4;
+            font-size: 18px;
+            font-weight: bold;
+            margin-left: 50px;
+            float: left;
+            direction: ltr;
+        }
+        #WS_popup_break {
+            float: none;
+            clear: both;
+            height: 9px;
+        }
+        #WS_popup_close {
+           background-image: url("http://storage.conduit.com/PS/whitesmoke/close.png");
+           height: 15px;
+           width: 15px;
+           background-repeat: no-repeat;
+           float: right;
+           cursor: pointer;
+           margin-right: 20px;
+        }
+        #WS_popup_close:hover {
+            background-image: url("http://storage.conduit.com/PS/whitesmoke/close_over.png");
+        }
+        #WS_popup_marked_text {
+            margin-left: 23px;
+            height: 50px;
+            width: 430px;
+            font-family: arial;
+            font-size: 13px;
+            border: solid !important;
+            border-width: 1px !important;
+            border-color: #cbcbcb !important;
+            background: white;
+            overflow-y: scroll;
+            float: left;
+        }
+        #WS_popup_points_text {
+            margin-left: 25px;
+            font-weight: bold;
+            font-size: 13px;
+            float :left;
+        }
+        .WS_popup_points_text_des {
+            margin-bottom: 3px;
+            line-height: 20px;
+            
+        }
+        .WS_popup_points_text_line {
+            margin-top: -2px;
+            float: left;
+        }
+        #WS_popup_bottom_text {
+            margin-left: 25px;
+            font-weight: bold;
+            font-size: 13px;
+            direction: ltr;
+        }
+        #WS_popup_buttons {
+            margin-top: 15px;
+            margin-left: 100px;
+            float: left;
+        }
+        #WS_popup_translate {
+            background-image: url("http://storage.conduit.com/PS/whitesmoke/translate.png");
+            width: 84px;
+            float :left;
+            height: 24px;
+            cursor: pointer;
+        }
+        #WS_popup_dictionary {
+            background-image: url("http://storage.conduit.com/PS/whitesmoke/dictionary.png");
+            width: 88px;
+            float :left;
+            height: 24px;
+            margin-left: 15px;
+            cursor: pointer;
+        }
+        #WS_popup_check_text {
+            background-image: url("http://storage.conduit.com/PS/whitesmoke/check_text.png");
+            width: 90px;
+            float :left;
+            height: 24px;
+            margin-left: 15px;
+            cursor: pointer;
+        }
