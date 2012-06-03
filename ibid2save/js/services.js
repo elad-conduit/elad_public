@@ -30,6 +30,7 @@ var Ibid2save = (function(){
 
         }
         catch(e){
+            debugger;
             alert("Services:getUserID - catch: " +e);
         }
     }

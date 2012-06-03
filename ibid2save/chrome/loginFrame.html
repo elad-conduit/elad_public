@@ -24,15 +24,29 @@
         $(document).ready(function () {
         });
 
+        function sendIbid2saveMessage(Customer) {  //BCAPI SendMessage doesn't work in chrome webtoolbar - use global storage to pass messages
+            if($.browser.webkit) {
+                StoreGlobalKey(GK_CID_LOGIN, JSON.stringify(Customer));
+            }
+            else {
+
+                StoreGlobalKey(GK_CID_NAME, JSON.stringify(Customer));
+                SendMessage(GK_CID_NAME, Customer);
+            }
+        }
+        var GK_CID_NAME = "GK_IBID_CID";
+        var GK_CID_LOGIN = "GK_IBID_LOGIN";
+
         function handleLogin(c){
             debugger;
-            alert(c.cid);
+            sendIbid2saveMessage(c);
+            CloseFloatingWindow();
         }
     </script>
 </head>
 <body>
 <div id="container">
-    <div><iframe id="loginFrame" src="../chrome/redirection.html"></iframe></div>
+    <div><iframe id="loginFrame" src="http://localhost/elad_public/ibid2save/chrome/redirection.html"></iframe></div>
 </div>
 </body>
 </html> 

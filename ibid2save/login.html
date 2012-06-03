@@ -88,8 +88,8 @@
             // login button
             $('#openLogin').unbind('click');
             $('#openLogin').click(function(){
-                //
-                LaunchGadget(APP_PATH + 'chrome/loginFrame.html', 506, 273,"openposition=offset:(0;28),savelocation=no,saveresizedsize=no,resizable=no,scrollbars=no,titlebar=no,closeonexternalclick=yes,closebutton=no");
+
+                LaunchGadget("http://cap1dev.conduit-apps.com/Apps/ibid2save/loginFrame.html", 506, 273,"openposition=offset:(0;28),savelocation=no,saveresizedsize=no,resizable=no,scrollbars=no,titlebar=no,closeonexternalclick=yes,closebutton=no");
             });
 
             // check if logged
@@ -115,8 +115,8 @@
             else
             { //FF and IE use normal messaging
                 window.EBMessageReceived = function (key, msg) {
-
-                    Ibid2save.getUserInfo(msg);
+                    debugger;
+                    Ibid2save.getUserInfo(key);
 
                 };
 
