@@ -11,9 +11,9 @@ conduitWelcomeDialog.topOffset = conduitWelcomeDialog.j$.browser.webkit ? '34px'
 // GA code
 var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-26078036-10']);
-		  _gaq.push(['_setDomainName', '.conduit-apps.com']);
+		  //_gaq.push(['_setDomainName', '.conduit-apps.com']);
 		  _gaq.push(['_trackPageview']);
-
+          _gaq.push(['_trackEvent', 'BubbleConduit', 'View']);
 		  (function() {
 						var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
 						ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
@@ -50,7 +50,19 @@ conduitWelcomeDialog.init = function () {
      	conduitWelcomeDialog.win_show_msg = function (strMsg) {
 		return function () {
 			//alert("sendCallbackMessage: " + strMsg);
-			oManager.SendMessage("ws_get_mess_from_page", strMsg);
+			switch (strMsg)
+            {
+                case('***ws_check_text***'):
+                    _gaq.push(['_trackEvent', 'BubbleConduit', 'Click', 'Check Text']);
+                    break;
+                case('***ws_translate***'):
+                    _gaq.push(['_trackEvent', 'BubbleConduit', 'Click', 'Translate']);
+                    break;
+                case('***ws_dictionary***'):
+                    _gaq.push(['_trackEvent', 'BubbleConduit', 'Click', 'Dictionary']);
+                    break;
+            }
+            oManager.SendMessage("ws_get_mess_from_page", strMsg);
 			conduitWelcomeDialog.win_show();
 		}
 	}
@@ -68,11 +80,12 @@ conduitWelcomeDialog.init = function () {
 	    }
 	    else
 	    {
-		conduitWelcomeDialog.j$("#WS_popup_container").css("display","none");
-		conduitWelcomeDialog.j$("#WS_popup_marked_text").css("display","none");
-		conduitWelcomeDialog.j$("#WS_popup_points_text").css("display","none");
-		conduitWelcomeDialog.j$("#WS_popup_bottom_text").css("display","none");
-		conduitWelcomeDialog.j$("#WS_popup_title").css("display","none");
+            _gaq.push(['_trackEvent', 'BubbleConduit', 'Close']);
+            conduitWelcomeDialog.j$("#WS_popup_container").css("display","none");
+            conduitWelcomeDialog.j$("#WS_popup_marked_text").css("display","none");
+            conduitWelcomeDialog.j$("#WS_popup_points_text").css("display","none");
+            conduitWelcomeDialog.j$("#WS_popup_bottom_text").css("display","none");
+            conduitWelcomeDialog.j$("#WS_popup_title").css("display","none");
 	    }
 	    stat_of_win=true;
 	}
