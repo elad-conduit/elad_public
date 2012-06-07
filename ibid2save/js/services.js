@@ -3,10 +3,12 @@
 var baseServer = "http://dev.ibid2save.com/",
     Services = {
     login : baseServer + "toolbar/login",
+    redirectLogin : "http://cap1dev.conduit-apps.com/Apps/ibid2save/loginFrame.html",
     getUserInfo : baseServer + "api/toolbar.php?xml=",
     logout : baseServer + "toolbar/logout",
     myAccount : "http://www.ibid2save.com/account/",
-    featured : "http://dev.ibid2save.com/toolbar/featured-status"
+    featured : baseServer + "toolbar/featured-status",
+    eranBids : baseServer + "earnbid"
     }
 
 var Ibid2save = (function(){
