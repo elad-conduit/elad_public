@@ -8,7 +8,10 @@ var baseServer = "http://dev.ibid2save.com/",
     logout : baseServer + "toolbar/logout",
     myAccount : "http://www.ibid2save.com/account/",
     featured : baseServer + "toolbar/featured-status",
-    eranBids : baseServer + "earnbid"
+    eranBids : baseServer + "earnbid",
+    endings: baseServer + "toolbar/ending-status",
+    liveAuctions : baseServer +"toolbar/live-status",
+    share : baseServer +"toolbar/friends"
     }
 
 var Ibid2save = (function(){

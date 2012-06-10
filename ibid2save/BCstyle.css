@@ -19,7 +19,7 @@ html, body {
     left: 3px;
     width: 13px;
     height: 12px;
-    background: url('images/sprite_icons.png') 0 -147px;
+    background: url('images/sprite_icons.png') 0 -146px;
 }
 .btnContainer:hover .leftBtn,.btnContainer:hover .textBtn, .btnContainer:hover .rightBtn
 {

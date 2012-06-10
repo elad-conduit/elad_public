@@ -8,7 +8,7 @@
     <script type="text/javascript" name="conduitApi" src="http://api.conduit.com/BrowserCompApi.js"></script>
     <style type="text/css">
         #gadgetFigure {
-            background-position: 0 0;
+            background-position: 0 87px;
         }
     </style>
     <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
@@ -19,9 +19,9 @@
             var gk = RetrieveGlobalKey('GK_IBID_CID');
             //alert('global key:' + gk);
             if (gk == null || gk == '')
-                LaunchGadget(Services.redirectLogin, 506, 273,"openposition=offset:(-100;28),savelocation=no,saveresizedsize=no,resizable=no,hscroll=no,vscroll=no,titlebar=no,closeonexternalclick=yes,closebutton=no");
+                LaunchGadget(Services.redirectLogin, 506, 273,"openposition=offset:(-400;28),savelocation=no,saveresizedsize=no,resizable=no,hscroll=no,vscroll=no,titlebar=no,closeonexternalclick=yes,closebutton=no");
             else
-                LaunchGadget(Services.eranBids, 615, 360,"openposition=offset:(0;28),savelocation=no,saveresizedsize=no,resizable=no,hscroll=no,vscroll=no,titlebar=no,closeonexternalclick=yes,closebutton=no");
+                LaunchGadget(Services.share, 700, 430,"openposition=offset:(0;28),savelocation=no,saveresizedsize=no,resizable=no,hscroll=no,vscroll=no,titlebar=no,closeonexternalclick=yes,closebutton=no");
         }
     </script>
 </head>
@@ -30,7 +30,7 @@
     <div class="btnContainer" onclick="openGad();">
         <div class="leftBtn"></div>
         <div id="gadgetFigure"></div>
-        <div class="textBtn">Earn Bids</div>
+        <div class="textBtn">Share</div>
         <div class="rightBtn"></div>
     </div>
 </div>
