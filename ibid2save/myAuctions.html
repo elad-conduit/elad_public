@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="BCstyle.css" />
+    <script type="text/javascript" src="js/services.js"></script>
+    <script type="text/javascript" name="conduitApi" src="http://api.conduit.com/BrowserCompApi.js"></script>
+    <style type="text/css">
+        #gadgetFigure {
+            background-position: 0 87px;
+        }
+    </style>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(init());
+
+        function init(){
+           // check user connection
+            debugger;
+            var gk = RetrieveGlobalKey('GK_IBID_CID');
+            if (gk == null || gk == ''){
+                $('.textBtn').html("<span style='color:red;'>no auctions</span>");
+            }
+            else
+            {
+
+            }
+        }
+
+
+        function openGad(){
+            var gk = RetrieveGlobalKey('GK_IBID_CID');
+            //alert('global key:' + gk);
+            if (gk == null || gk == '')
+                LaunchGadget(Services.redirectLogin, 506, 273,"openposition=offset:(-400;28),savelocation=no,saveresizedsize=no,resizable=no,hscroll=no,vscroll=no,titlebar=no,closeonexternalclick=yes,closebutton=no");
+            else
+                LaunchGadget(Services.share, 700, 430,"openposition=offset:(0;28),savelocation=no,saveresizedsize=no,resizable=no,hscroll=no,vscroll=no,titlebar=no,closeonexternalclick=yes,closebutton=no");
+        }
+    </script>
+</head>
+<body>
+<div id="container">
+    <div class="btnContainer">
+        <div class="leftBtn"></div>
+        <div id="gadgetFigure"></div>
+        <div class="textBtn">Share</div>
+        <div class="rightBtn"></div>
+    </div>
+</div>
+</body>
+</html> 

@@ -2,16 +2,17 @@
 
 var baseServer = "http://dev.ibid2save.com/",
     Services = {
-    login : baseServer + "toolbar/login",
-    redirectLogin : "http://cap1dev.conduit-apps.com/Apps/ibid2save/loginFrame.html",
-    getUserInfo : baseServer + "api/toolbar.php?xml=",
-    logout : baseServer + "toolbar/logout",
-    myAccount : "http://www.ibid2save.com/account/",
-    featured : baseServer + "toolbar/featured-status",
-    eranBids : baseServer + "earnbid",
-    endings: baseServer + "toolbar/ending-status",
-    liveAuctions : baseServer +"toolbar/live-status",
-    share : baseServer +"toolbar/friends"
+        login : baseServer + "toolbar/login",
+        redirectLogin : "http://cap1dev.conduit-apps.com/Apps/ibid2save/loginFrame.html",
+        getUserInfo : baseServer + "api/toolbar.php?xml=",
+        logout : baseServer + "toolbar/logout",
+        myAccount : "http://www.ibid2save.com/account/",
+        featured : baseServer + "toolbar/featured-status",
+        eranBids : baseServer + "earnbid",
+        endings: baseServer + "toolbar/ending-status",
+        liveAuctions : baseServer +"toolbar/live-status",
+        share : baseServer +"toolbar/friends",
+        getUserAuctions : baseServer + "toolbar.php?xml="
     }
 
 var Ibid2save = (function(){
@@ -52,6 +53,18 @@ var Ibid2save = (function(){
         StoreGlobalKey(CustomerKey, JSON.stringify(Customer));
         showLoggedDetails();
         //alert("Welcome: " + $respXML.find('username').text() + " bids: " + $respXML.find('bidsnumber'));
+    }
+    // get user's auctions
+    function getUserAuctions(key){
+        debugger;
+        CustomerKey = key;
+        Customer = $.parseJSON(RetrieveGlobalKey(CustomerKey));
+
+        var xml = encodeURIComponent("<xml><trantype>getIndicator</trantype><tranparms><customerid>" + Customer.cid + "</customerid><securityKey>" + Customer.cmd5 + "</securityKey></tranparms></xml>");
+        CrossDomainHttpRequest(handleUserAuctionsResponse, 'GET', Services.getUserAuctions + xml, null, null, null, null);
+    }
+    function handleUserAuctionsResponse(){
+        alert(resp);
     }
     function getCustomer(){
         return Customer;
