@@ -23,7 +23,7 @@ var Ibid2save = (function(){
     // return username and bids
     function getUserInfo(key){
         try{
-            debugger;
+
             CustomerKey = key;
             Customer = $.parseJSON(RetrieveGlobalKey(CustomerKey));
             //alert(Customer.cid);
@@ -36,7 +36,7 @@ var Ibid2save = (function(){
 
         }
         catch(e){
-            debugger;
+
             alert("Services:getUserID - catch: " +e);
         }
     }
@@ -55,13 +55,21 @@ var Ibid2save = (function(){
         //alert("Welcome: " + $respXML.find('username').text() + " bids: " + $respXML.find('bidsnumber'));
     }
     // get user's auctions
-    function getUserAuctions(key){
+    function getUserAuctions(c){
         debugger;
-        CustomerKey = key;
-        Customer = $.parseJSON(RetrieveGlobalKey(CustomerKey));
+        try{
+            //CustomerKey = key;
 
-        var xml = encodeURIComponent("<xml><trantype>getIndicator</trantype><tranparms><customerid>" + Customer.cid + "</customerid><securityKey>" + Customer.cmd5 + "</securityKey></tranparms></xml>");
-        CrossDomainHttpRequest(handleUserAuctionsResponse, 'GET', Services.getUserAuctions + xml, null, null, null, null);
+            Customer = c;
+
+            var xml = encodeURIComponent("<xml><trantype>getIndicator</trantype><tranparms><customerid>" + Customer.cid + "</customerid><securityKey>" + Customer.cmd5 + "</securityKey></tranparms></xml>");
+            CrossDomainHttpRequest(handleUserAuctionsResponse, 'GET', Services.getUserAuctions + xml, null, null, null, null);
+        }
+        catch(e)
+        {
+            alert("Services:getUserAuctions - catch: " +e);
+        }
+
     }
     function handleUserAuctionsResponse(){
         alert(resp);
@@ -72,6 +80,7 @@ var Ibid2save = (function(){
 
     return {
         getUserInfo:getUserInfo,
+        getUserAuctions:getUserAuctions,
         getCustomer:getCustomer
     }
 })();

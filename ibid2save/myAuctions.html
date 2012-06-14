@@ -12,8 +12,9 @@
         }
     </style>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/services.js"></script>
     <script type="text/javascript">
-        $(document).ready(init());
+        //$(document).ready(init());
 
         function init(){
            // check user connection
@@ -24,27 +25,28 @@
             }
             else
             {
-
+                Ibid2save.getUserAuctions(gk);
             }
         }
-
 
         function openGad(){
             var gk = RetrieveGlobalKey('GK_IBID_CID');
             //alert('global key:' + gk);
             if (gk == null || gk == '')
+            {
                 LaunchGadget(Services.redirectLogin, 506, 273,"openposition=offset:(-400;28),savelocation=no,saveresizedsize=no,resizable=no,hscroll=no,vscroll=no,titlebar=no,closeonexternalclick=yes,closebutton=no");
+            }
             else
                 LaunchGadget(Services.share, 700, 430,"openposition=offset:(0;28),savelocation=no,saveresizedsize=no,resizable=no,hscroll=no,vscroll=no,titlebar=no,closeonexternalclick=yes,closebutton=no");
         }
     </script>
 </head>
-<body>
+<body onload="init();">
 <div id="container">
-    <div class="btnContainer">
+    <div class="btnContainer" onclick="openGad();">
         <div class="leftBtn"></div>
         <div id="gadgetFigure"></div>
-        <div class="textBtn">Share</div>
+        <div class="textBtn"></div>
         <div class="rightBtn"></div>
     </div>
 </div>
