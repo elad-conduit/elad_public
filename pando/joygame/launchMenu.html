@@ -53,18 +53,21 @@
 			'btnZomb'		:	'http://www.joygame.com/zombirock/',
 			'btnCengiz'	:	'http://www.joygame.com/cengizhan2/',
 			'btnSon'	:	'http://www.joygame.com/sondestan/'
-		};		
+        };
 	
 	$(document).ready(function () {
-		/*if ($.browser.webkit) { // Don't run on chrome
-			ChangeWidth(1);
-		} else {
-			$("#container").show();
-			bindEvents();
-		}
-		*/
-			bindEvents();
-		});
+        if($.browser.webkit) // Don't run on chrome
+            handleChrome();
+        else
+            bindEvents();
+
+        $(".btn").hover(function(){
+                $(this).css('background-color','#272932');
+                },
+                function(){
+                    $(this).css('background-color','#181a20');
+            });
+    });
 	
 	/*
 	 *	Bind GUI Events
@@ -74,20 +77,29 @@
 				var btnId = $('span',$(this)).attr('id');
 				launchAction(btnId);
 			});
-			
-		$(".btn").hover(function(){
-			$(this).css('background-color','#272932');
-		},
-		function(){
-			$(this).css('background-color','#181a20');
-		});
+
+
 	}
-	
-	function launchAction(btnId) {
-		var urlonuninstall = UNINSTALL_PAGES[btnId];
-		LaunchExternalProgram(REG_ALIAS, "", urlonuninstall);
-	}
-	
+    function launchAction(btnId) {
+        var urlonuninstall = UNINSTALL_PAGES[btnId];
+        LaunchExternalProgram(REG_ALIAS, "", urlonuninstall);
+    }
+
+    function handleChrome(){
+        $(".btn").click(function () {
+            var btnId = $('span',$(this)).attr('id');
+            launchURL(btnId);
+        });
+    }
+
+    function launchURL(btnId){
+        var fallbackURL = UNINSTALL_PAGES[btnId];
+        NavigateInMainFrame(fallbackURL);
+        setTimeout('CloseFloatingWindow()', 400);
+    }
+
+
+
 	/*
 	 *	Change the Y offset of the background-position
 	 *	CSS property.
@@ -100,27 +112,24 @@
 </head>
 <body>
 	<div id="container">
-		<div class="btn" title="Play WolfTeam"><span class="btnThumb" id="btnWolf"></span>Play WolfTeam</div>
+		<div class="btn" title="Play WolfTeam"><span class="btnThumb" id="btnWolf"></span>WolfTeam oyna</div>
 		<div class="Breaker"></div>
 		<div class="borderLine"></div>
 		<div class="Breaker"></div>
-		<div class="btn" title="Play Raklon"><span class="btnThumb" id="btnRaklon"></span>Play Raklon</div>
+		<div class="btn" title="Play Raklon"><span class="btnThumb" id="btnRaklon"></span>Raklon oyna</div>
 		<div class="Breaker"></div>
 		<div class="borderLine"></div>
 		<div class="Breaker"></div>
-		<div class="btn" title="Play Kehanet"><span class="btnThumb" id="btnKehanet"></span>Play Kehanet</div>
+		<div class="btn" title="Play Kehanet"><span class="btnThumb" id="btnKehanet"></span>Kehanet oyna</div>
 		<div class="Breaker"></div>
 		<div class="borderLine"></div>
 		<div class="Breaker"></div>
-		<div class="btn" title="Play ZombiRock"><span class="btnThumb" id="btnZomb"></span>Play ZombiRock</div>
+		<div class="btn" title="Play ZombiRock"><span class="btnThumb" id="btnZomb"></span>ZombiRock oyna</div>
 		<div class="Breaker"></div>
 		<div class="borderLine"></div>
 		<div class="Breaker"></div>
-		<div class="btn" title="Play CengizHan 2"><span class="btnThumb" id="btnCengiz"></span>Play CengizHan 2</div>
-		<div class="Breaker"></div>
-		<div class="borderLine"></div>
-		<div class="Breaker"></div>
-		<div class="btn" title="Play Son Destan"><span class="btnThumb" id="btnSon"></span>Play Son Destan</div>
+		<div class="btn" title="Play CengizHan 2"><span class="btnThumb" id="btnCengiz"></span>CengizHan 2 oyna</div>
+
 	</div>
 </body>
 </html>
