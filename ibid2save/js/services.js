@@ -12,7 +12,7 @@ var baseServer = "http://dev.ibid2save.com/",
         endings: baseServer + "toolbar/ending-status",
         liveAuctions : baseServer +"toolbar/live-status",
         share : baseServer +"toolbar/friends",
-        getUserAuctions : baseServer + "toolbar.php?xml="
+        getUserAuctions : baseServer + "api/toolbar.php?xml="
     }
 
 var Ibid2save = (function(){
@@ -56,14 +56,14 @@ var Ibid2save = (function(){
     }
     // get user's auctions
     function getUserAuctions(c){
-        debugger;
         try{
             //CustomerKey = key;
 
-            Customer = c;
+            Customer = JSON.parse(c);
 
             var xml = encodeURIComponent("<xml><trantype>getIndicator</trantype><tranparms><customerid>" + Customer.cid + "</customerid><securityKey>" + Customer.cmd5 + "</securityKey></tranparms></xml>");
-            CrossDomainHttpRequest(handleUserAuctionsResponse, 'GET', Services.getUserAuctions + xml, null, null, null, null);
+            //CrossDomainHttpRequest(handleUserAuctionsResponse, 'GET', Services.getUserAuctions + xml, null, null, null, null);
+            CrossDomainHttpRequest(handleUserAuctionsResponse, 'GET', "http://localhost/elad_public/ibid2save/debug/multiauctions.xml", null, null, null, null);
         }
         catch(e)
         {
@@ -71,8 +71,20 @@ var Ibid2save = (function(){
         }
 
     }
-    function handleUserAuctionsResponse(){
-        alert(resp);
+    function handleUserAuctionsResponse(resp){
+        debugger;
+        var $respXML = $($.parseXML(resp.toLowerCase()).childNodes[0]);
+        //alert($respXML.text());
+        //Customer.auctions = $respXML.find('auctions');
+        $respXML.find('auctions').each(
+            function(){
+                alert($(this));
+            }
+        );
+        //alert(Customer.auctions.find('name'));
+
+        //Customer.bids = $respXML.find('bidsnumber').text();
+        //Customer.avatar = baseServer + $respXML.find('avatar').text();
     }
     function getCustomer(){
         return Customer;

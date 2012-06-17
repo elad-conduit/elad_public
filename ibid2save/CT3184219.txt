@@ -20,4 +20,4 @@ https://dev.ibid2save.com/api/toolbar.php?xml=<xml><trantype>getuserinfo</tranty
 
  http://dev.ibid2save.com/api/toolbar.php?xml=<xml><trantype>getuserinfo</trantype><tranparms><customerid>18389</customerid><securityKey>fa817688d8841bc8e48a588099ffd70e</securityKey></tranparms></xml>
 
-http://dev.ibid2save.com/api/toolbar.php?xml=<xml><trantype>getIndicator</trantype><tranparms><customerid>20768</customerid><securityKey>3cce7278d9d216416b343aa2cd94946a</securityKey></tranparms></xml>
+http://dev.ibid2save.com/api/toolbar.php?xml=<xml><trantype>getIndicator</trantype><tranparms><customerid>18389</customerid><securityKey>fa817688d8841bc8e48a588099ffd70e</securityKey></tranparms></xml>
