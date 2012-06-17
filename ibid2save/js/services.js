@@ -74,14 +74,10 @@ var Ibid2save = (function(){
     function handleUserAuctionsResponse(resp){
         debugger;
         var $respXML = $($.parseXML(resp.toLowerCase()).childNodes[0]);
-        //alert($respXML.text());
-        //Customer.auctions = $respXML.find('auctions');
-        $respXML.find('auctions').each(
-            function(){
-                alert($(this));
-            }
-        );
-        //alert(Customer.auctions.find('name'));
+        alert($respXML.text());
+        Customer.auctions = $($.parseXML($respXML.find('auctions')).childNodes[0]);
+
+        alert(Customer.auctions.text());
 
         //Customer.bids = $respXML.find('bidsnumber').text();
         //Customer.avatar = baseServer + $respXML.find('avatar').text();
