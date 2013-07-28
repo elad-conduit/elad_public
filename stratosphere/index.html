@@ -8,19 +8,37 @@
 </head>
 <body>
 
-  <script type="text/x-handlebars">
-    <h2>Welcome to Ember.js</h2>
+    <form class="form-horizontal" {{action "login" on="submit"}}>
+        {{#if loginFailed}}
+            <div class="alert">Invalid username or password</div>
+        {{/if}}
 
-    {{outlet}}
-  </script>
+    {{#if isSlowConnection}}
+        <div class="alert alert-ifno">The request seems to be taking more time than usual, please wait.</div>
+    {{/if}}
 
-  <script type="text/x-handlebars" data-template-name="index">
-    <ul>
-    {{#each item in model}}
-      <li>{{item}}</li>
-    {{/each}}
-    </ul>
-  </script>
+    <div class="control-group">
+        <div class="control-label">
+            <label>Username</label>
+        </div>
+
+        <div class="controls">
+            {{input value=username type="text"}}
+        </div>
+    </div>
+
+    <div class="control-group">
+        <div class="control-label">
+            <label>Password</label>
+        </div>
+
+        <div class="controls">
+            {{input value=password type="password"}}
+        </div>
+    </div>
+
+    <button type="submit" class="btn" {{bindAttr disabled="isProcessing"}}>Log in!</button>
+    </form>
 
   <script src="js/libs/jquery-1.9.1.js"></script>
   <script src="js/libs/handlebars-1.0.0-rc.4.js"></script>

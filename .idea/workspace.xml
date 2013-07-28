@@ -1,7 +1,1001 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc680aa1-d8f0-4a07-acb0-839fd884323e" name="Default" comment="" />
+    <list default="true" id="fc680aa1-d8f0-4a07-acb0-839fd884323e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stratosphere/js/libs/ember-data-master.js" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather.html.bak" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather.php.bak" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\Accuweather.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\Accuweather.html.bak" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\Accuweather.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\Accuweather.php.bak" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\aerigh.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\aerigh.txt.bak" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\aweathergad.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\aweathergad.php.bak" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\css\comp.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\css\gad.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\css\global.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\css\global.css.bak" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\css\index.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\css\index.css.bak" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\css\style.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\css\style2.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\css\style2.css.bak" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\css\stylemetric.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\css\stylemetric.css.bak" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\global.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\15days.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\1px_skin.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\arrow.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\back-h2.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\celci_selected.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\celci_unselected.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\dropdown.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\feren_selected.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\feren_unselected.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\go.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\hourly.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\hover.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\hover.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\location\1px_divider.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\location\add_button.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\location\close_button.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\location\delete_button.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\location\logo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\location\search_go_button.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\logo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\notification.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\settings.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\temperature_window.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\toolbar_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\weather\icon01.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\weather\icon02.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\weather\icon03.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\weather\icon04.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\weather\icon05.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\weather\icon06.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\weather\icon07.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\weather\icon08.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\weather\icon11.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\weather\icon12.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\weather\icon13.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\weather\icon14.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\weather\icon15.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\weather\icon16.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\weather\icon17.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\weather\icon18.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\weather\icon19.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\weather\icon20.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\weather\icon21.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\weather\icon22.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\weather\icon23.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\weather\icon24.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\weather\icon25.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\weather\icon26.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\weather\icon29.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\weather\icon30.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\weather\icon31.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\weather\icon32.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\weather\icon33.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\weather\icon34.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\weather\icon35.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\weather\icon36.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\weather\icon37.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\weather\icon38.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\weather\icon39.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\weather\icon40.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\weather\icon41.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\weather\icon42.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\weather\icon43.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\images\weather\icon44.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\index.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\js\clear-default-text.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\js\global.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\js\helpers.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\js\jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\js\json.as" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\js\util-functions.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\metricgad.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\metricgad.html.bak" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\proxy.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\proxy.php.bak" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\proxysearch.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\Accuweather\proxysearch.php.bak" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\aerigh.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\aerigh.txt.bak" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\aweathergad.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\aweathergad.php.bak" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\css\comp.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\css\gad.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\css\global.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\css\global.css.bak" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\css\index.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\css\index.css.bak" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\css\style.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\css\style2.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\css\style2.css.bak" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\css\stylemetric.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\css\stylemetric.css.bak" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\15days.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\1px_skin.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\arrow.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\back-h2.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\celci_selected.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\celci_unselected.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\dropdown.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\feren_selected.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\feren_unselected.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\go.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\hourly.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\hover.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\hover.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\location\1px_divider.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\location\add_button.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\location\close_button.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\location\delete_button.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\location\logo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\location\search_go_button.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\logo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\notification.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\settings.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\temperature_window.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\toolbar_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\weather\icon01.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\weather\icon02.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\weather\icon03.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\weather\icon04.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\weather\icon05.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\weather\icon06.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\weather\icon07.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\weather\icon08.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\weather\icon11.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\weather\icon12.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\weather\icon13.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\weather\icon14.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\weather\icon15.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\weather\icon16.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\weather\icon17.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\weather\icon18.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\weather\icon19.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\weather\icon20.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\weather\icon21.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\weather\icon22.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\weather\icon23.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\weather\icon24.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\weather\icon25.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\weather\icon26.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\weather\icon29.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\weather\icon30.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\weather\icon31.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\weather\icon32.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\weather\icon33.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\weather\icon34.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\weather\icon35.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\weather\icon36.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\weather\icon37.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\weather\icon38.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\weather\icon39.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\weather\icon40.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\weather\icon41.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\weather\icon42.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\weather\icon43.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\images\weather\icon44.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\index.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\index.css.bak" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\js\clear-default-text.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\js\global.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\js\helpers.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\js\jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\js\json.as" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\js\util-functions.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\metricgad.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\metricgad.html.bak" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\proxy.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\proxy.php.bak" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\proxysearch.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\Accuweather2\proxysearch.php.bak" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FRG\notif\freeride.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FRG\notif\live.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FRG\phase1\Images\Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FRG\phase1\Images\bg-pattern--default.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FRG\phase1\Images\bg-pattern--edge.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FRG\phase1\Images\button--downloading.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FRG\phase1\Images\button--play.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FRG\phase1\Images\button--queue.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FRG\phase1\Images\cta-button.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FRG\phase1\Images\freeride-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FRG\phase1\Images\in_player_queue.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FRG\phase1\Images\x-close.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FRG\phase1\forbiddonKewordList.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FRG\phase1\freeride.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FRG\phase1\injectedScript.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FRG\phase1\injectedScript.rar" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FRG\phase1\searchTermInfo.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FRG\phase1\test.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FRG\phase2\freeride.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FRG\phase2\injectedScript.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FRG\phase2\injectedScript.rar" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FRG\phase2\phase2.rar" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FRG\searchchage.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\CIApp.htm" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\CIBB.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\Css\SmartBox.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\Css\jScrollPane.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\Images\BG.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\Images\Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\Images\ajax-loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\Images\basic_box.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\Images\but.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\Images\but_over_mash.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\Images\close.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\Images\conduit_logo.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\Images\container_main.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\Images\cricinfo_gadget_mockup.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\Images\cricinfo_logo.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\Images\facebook_clicked.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\Images\facebook_reg.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\Images\fb_mini_disabled.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\Images\fb_mini_mouseover.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\Images\jobs_clicked_mash.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\Images\jobs_clicked_tech.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\Images\mockup.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\Images\ms_mini_disabled.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\Images\ms_mini_mouseover.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\Images\news_clicked.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\Images\photos_clicked.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\Images\photos_reg.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\Images\tbico.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\Images\tbico_over.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\Images\tw_mini_disabled.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\Images\tw_mini_mouseover.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\Images\twitter_clicked.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\Images\twitter_reg.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\Scripts\CricinfoWB.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\Scripts\CricinfoWB.rar" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\Scripts\autoScroll.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\Scripts\jMouseWheel.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\Scripts\jScrollPane-1.2.3.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\Scripts\jquery-1.3.2-vsdoc2.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\readRSS.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\readTPUB.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\readTWIT.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\FreeRideGames\scriptWB.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\IcyTower\notif\bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\IcyTower\notif\button.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\IcyTower\notif\getCustomerID.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\IcyTower\notif\icy.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\IcyTower\notif\icy_notification.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\IcyTower\notif\logo_small.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\MotoGP\CIApp.htm" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\MotoGP\CIBB.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\MotoGP\images\Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\MotoGP\images\Twittericon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\MotoGP\images\bg.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\MotoGP\images\close.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\MotoGP\images\conduit.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\MotoGP\images\cricket.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\MotoGP\images\cricket_over.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\MotoGP\images\facebook.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\MotoGP\images\facebook_over.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\MotoGP\images\flickr.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\MotoGP\images\flickr_over.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\MotoGP\images\icon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\MotoGP\images\jsonized.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\MotoGP\images\logo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\MotoGP\images\mockup.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\MotoGP\images\news.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\MotoGP\images\news_over.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\MotoGP\images\offers.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\MotoGP\images\offers_over.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\MotoGP\images\photos.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\MotoGP\images\photos_over.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\MotoGP\images\twitter.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\MotoGP\images\twitter_over.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\MotoGP\images\youtube.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\MotoGP\images\youtube_over.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\MotoGP\jsonized.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\WallaNot_final\634099715945257500.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\WallaNot_final\New_not3.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\WallaNot_final\alltime_hits.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\WallaNot_final\bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\WallaNot_final\button.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\WallaNot_final\israel_hits.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\WallaNot_final\medit_hits.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\WallaNot_final\walla1.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bild.de\css\embedded\index.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bild.de\css\html\index.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bild.de\images\App\background.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bild.de\images\App\score-box.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bild.de\images\App\vs.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bild.de\images\FinishedGames\Background.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bild.de\images\FinishedGames\finished-game-status.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bild.de\images\FinishedGames\info-box.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bild.de\images\FinishedGames\team-box.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bild.de\images\FinishedGames\vs.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bild.de\images\LiveGames\Background.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bild.de\images\LiveGames\background.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bild.de\images\LiveGames\live-game-status.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bild.de\images\LiveGames\period-box.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bild.de\images\LiveGames\team-box.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bild.de\images\LiveGames\team-box02.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bild.de\images\LiveGames\vs.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bild.de\images\LiveGames\watch-live-box.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bild.de\images\LiveGames\watch-live-box02.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bild.de\images\UpcomingGames\Background.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bild.de\images\UpcomingGames\info-box.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bild.de\images\UpcomingGames\team-box.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bild.de\images\UpcomingGames\upcoming-status-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bild.de\images\UpcomingGames\vs.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bild.de\images\btn_grey.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bild.de\images\btn_red.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bild.de\images\logo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bild.de\php\csvToJson.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bild.de\php\index.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bild.de\php\path.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bild.de\tmpl\embedded\index.tmpl.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bild.de\tmpl\html\index.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bild.de\xml\news.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bitlord\bitlord.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bitlord\bitlord.rar" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bitlord\ddl.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bitlord\floater.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bitlord\json\.svn\entries" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bitlord\json\.svn\prop-base\JSON.php.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bitlord\json\.svn\prop-base\LICENSE.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bitlord\json\.svn\text-base\JSON.php.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bitlord\json\.svn\text-base\LICENSE.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bitlord\json\JSON.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bitlord\json\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bitlord\jsonize.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\bitlord\xml2json.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\cleanlab\Cleanlab_logo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\cleanlab\common.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\cleanlab\glassicon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\cleanlab\searchGeneric.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\Euroleague11-02-01\css\embedded\index.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\Euroleague11-02-01\css\html\index.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\Euroleague11-02-01\images\App\background.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\Euroleague11-02-01\images\App\score-box.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\Euroleague11-02-01\images\App\vs.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\Euroleague11-02-01\images\FinishedGames\Background.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\Euroleague11-02-01\images\FinishedGames\finished-game-status.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\Euroleague11-02-01\images\FinishedGames\info-box.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\Euroleague11-02-01\images\FinishedGames\team-box.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\Euroleague11-02-01\images\FinishedGames\vs.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\Euroleague11-02-01\images\LiveGames\Background.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\Euroleague11-02-01\images\LiveGames\background.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\Euroleague11-02-01\images\LiveGames\live-game-status.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\Euroleague11-02-01\images\LiveGames\period-box.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\Euroleague11-02-01\images\LiveGames\team-box.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\Euroleague11-02-01\images\LiveGames\team-box02.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\Euroleague11-02-01\images\LiveGames\vs.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\Euroleague11-02-01\images\LiveGames\watch-live-box.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\Euroleague11-02-01\images\LiveGames\watch-live-box02.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\Euroleague11-02-01\images\UpcomingGames\Background.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\Euroleague11-02-01\images\UpcomingGames\info-box.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\Euroleague11-02-01\images\UpcomingGames\team-box.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\Euroleague11-02-01\images\UpcomingGames\upcoming-status-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\Euroleague11-02-01\images\UpcomingGames\vs.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\Euroleague11-02-01\images\logo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\Euroleague11-02-01\php\csvToJson.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\Euroleague11-02-01\php\index.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\Euroleague11-02-01\php\path.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\Euroleague11-02-01\tmpl\embedded\index.tmpl.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\Euroleague11-02-01\tmpl\html\index.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\Euroleague11-02-01\xml\euroleague.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\Euroleague11-02-01\xml\games.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\Euroleague11-02-01\xml\games2.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\Euroleague20-02-01.rar" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\css\embedded\index.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\css\html\index.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\euroleague scoreboard-16.1.11.rar" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\euroleague scoreboard-18-1-11.rar" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\euroleague scoreboardCAP1.rar" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\images\App\background.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\images\App\score-box.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\images\App\vs.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\images\FinishedGames\Background.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\images\FinishedGames\finished-game-status.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\images\FinishedGames\info-box.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\images\FinishedGames\team-box.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\images\FinishedGames\vs.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\images\LiveGames\Background.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\images\LiveGames\background.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\images\LiveGames\live-game-status.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\images\LiveGames\period-box.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\images\LiveGames\team-box.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\images\LiveGames\team-box02.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\images\LiveGames\vs.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\images\LiveGames\watch-live-box.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\images\LiveGames\watch-live-box02.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\images\UpcomingGames\Background.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\images\UpcomingGames\info-box.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\images\UpcomingGames\team-box.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\images\UpcomingGames\upcoming-status-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\images\UpcomingGames\vs.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\images\logo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\php\csvToJson.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\php\index.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\php\path.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\tmpl\embedded\index.tmpl.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\tmpl\html\index.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\xml\euroleague.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague scoreboard\xml\games.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\CIApp.htm" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\CIBB.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\Css\SmartBox.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\Css\jScrollPane.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\Images\BG.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\Images\Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\Images\ajax-loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\Images\basic_box.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\Images\but.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\Images\but_over_mash.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\Images\close.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\Images\conduit_logo.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\Images\container_main.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\Images\cricinfo_logo.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\Images\facebook_clicked.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\Images\facebook_reg.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\Images\fb_mini_disabled.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\Images\fb_mini_mouseover.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\Images\jobs_clicked_mash.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\Images\jobs_clicked_tech.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\Images\mockup.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\Images\ms_mini_disabled.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\Images\ms_mini_mouseover.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\Images\news_clicked.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\Images\news_reg.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\Images\notif_1digit.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\Images\notif_2digits.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\Images\photos_clicked.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\Images\photos_reg.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\Images\tbico.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\Images\tbico_over.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\Images\tw_mini_disabled.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\Images\tw_mini_mouseover.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\Images\twitter_clicked.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\Images\twitter_reg.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\Scripts\CricinfoWB.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\Scripts\CricinfoWB.rar" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\Scripts\autoScroll.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\Scripts\jMouseWheel.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\Scripts\jScrollPane-1.2.3.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\Scripts\jquery-1.3.2-vsdoc2.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\checkFeed.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\cookies.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\disableselection.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\notifier.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\readRSS.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\readTPUB.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\readTWIT.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\scriptWB.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\euroleague\widget.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\CSS\bloggerBox.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\CSS\bloggerBoxBtn.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\CSS\jScrollPane.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\Images\BG.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\Images\ajax-loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\Images\bg_opacity2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\Images\but.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\Images\but_over_mash.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\Images\close.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\Images\conduit.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\Images\conduit_old.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\Images\email.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\Images\facebook.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\Images\mail.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\Images\twitter.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\JS\HTMLComponentInject.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\JS\HTMLComponentInjectFoxNews.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\JS\bloggerBox.OLD.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\JS\bloggerBox.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\JS\bloggerBox2.backup.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\JS\bloggerBox2.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\JS\bloggerBox3.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\JS\bloggerBox4.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\JS\gadgetWindowInject.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\JS\gadgetWindowInject2.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\JS\gadgetWindowInject3.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\JS\gadgetWindowInjectOLD.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\JS\gadgetWindowInjectfoxnews.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\JS\jMouseWheel.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\JS\jScrollPane-1.2.3.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\JS\jquery-1.3.2-vsdoc2.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\PHP\a.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\PHP\html.dom.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\PHP\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\PHP\index.html.1" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\PHP\parser.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\PHP\readAtom.json.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\PHP\readAtom.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\PHP\readBurner.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\PHP\readFeed.2.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\PHP\readFeed.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\PHP\readRSS.json.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\PHP\readRSS.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\PHP\readTwit.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\PHP\readTwitPub.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\PHP\string.trim.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\PHP\xml.node.extract.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\PHP\xml.output.2.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\PHP\xml.output.BACKUP.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\PHP\xml.output.json.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\PHP\xml.output.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\BloggerBox\PHP\yumlist.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\CIApp.htm" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\CIBB.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\Css\SmartBox.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\Css\jScrollPane.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\Images\BG.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\Images\Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\Images\ajax-loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\Images\basic_box.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\Images\but.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\Images\but_over_mash.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\Images\close.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\Images\conduit_logo.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\Images\container_main.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\Images\cricinfo_logo.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\Images\facebook_clicked.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\Images\facebook_reg.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\Images\fb_mini_disabled.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\Images\fb_mini_mouseover.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\Images\jobs_clicked_mash.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\Images\jobs_clicked_tech.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\Images\mockup.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\Images\ms_mini_disabled.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\Images\ms_mini_mouseover.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\Images\news_clicked.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\Images\news_reg.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\Images\notif_1digit.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\Images\notif_2digits.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\Images\photos_clicked.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\Images\photos_reg.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\Images\tbico.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\Images\tw_mini_disabled.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\Images\tw_mini_mouseover.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\Images\twitter_clicked.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\Images\twitter_reg.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\Scripts\CricinfoWB.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\Scripts\CricinfoWB.rar" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\Scripts\autoScroll.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\Scripts\jMouseWheel.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\Scripts\jScrollPane-1.2.3.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\Scripts\jquery-1.3.2-vsdoc2.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\checkFeed.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\cookies.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\disableselection.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\CIApp.htm" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\CIBB.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\19x19.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\24x24.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\BG.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\ajax-loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\background.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\background2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\basic_box.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\but.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\but_over_mash.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\close-button.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\close.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\conduit_logo.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\container_main.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\cricinfo_logo.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\facebook.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\facebook_clicked.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\facebook_over.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\facebook_reg.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\fb_mini_disabled.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\fb_mini_mouseover.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\iconFoxNews.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\jobs_clicked_mash.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\jobs_clicked_tech.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\listen.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\listen_over.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\logo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\mockup.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\ms_mini_disabled.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\ms_mini_mouseover.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\newlogo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\newlogot.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\news.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\news_clicked.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\news_over.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\news_reg.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\notif_1digit.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\notif_2digits.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\photos_clicked.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\photos_reg.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\podcasts.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\podcasts_over.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\tbico.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\tbico.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\tw_mini_disabled.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\tw_mini_mouseover.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\twiticon.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\twitter.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\twitter_clicked.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\twitter_over.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\Images\twitter_reg.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\newblogapp\jsonized.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\notifier.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\readRSS.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\readTPUB.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\readTWIT.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\scriptWB.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\foxnews\widget.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\ibid2save\BCstyle.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\ibid2save\CT3184219.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\ibid2save\chrome\loginFrame.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\ibid2save\chrome\redirection.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\ibid2save\debug\multiauctions.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\ibid2save\earnbids.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\ibid2save\endings.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\ibid2save\featured.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\ibid2save\getCustomerID.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\ibid2save\getUserInfo.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\ibid2save\images\app.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\ibid2save\images\blue_center_btn.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\ibid2save\images\blue_left_btn.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\ibid2save\images\blue_right_btn.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\ibid2save\images\close.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\ibid2save\images\congratulation_msg.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\ibid2save\images\congratulations.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\ibid2save\images\down.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\ibid2save\images\gray_btn.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\ibid2save\images\gray_left_btn.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\ibid2save\images\gray_right_btn.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\ibid2save\images\green_center_btn.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\ibid2save\images\green_left_btn.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\ibid2save\images\green_right_btn.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\ibid2save\images\sprite_icons.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\ibid2save\images\up.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\ibid2save\js\MD5.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\ibid2save\js\services.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\ibid2save\liveAuctions.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\ibid2save\loggedMenu.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\ibid2save\login.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\ibid2save\myAuctions.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\ibid2save\share.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\inject\searchsuggest.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\inject\welcomeDialog.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\.idea\.name" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\.idea\encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\.idea\mario.iml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\.idea\misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\.idea\modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\.idea\scopes\scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\.idea\vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\.idea\workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\CT3217858.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\figure\Mario-Welcome-Experience.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\figure\Mario.rar" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\figure\animate.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\figure\animate.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\figure\bigInstructions.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\figure\big_btn.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\figure\big_instructions.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\figure\img\bg.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\figure\img\big.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\figure\img\big_btn.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\figure\img\bird.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\figure\img\mario_big.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\figure\img\mario_small.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\figure\img\mario_super.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\figure\img\mushroom.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\figure\img\mushroom2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\figure\img\small.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\figure\img\small_btn.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\figure\img\super.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\figure\img\super_btn.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\figure\instructions.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\figure\mario.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\figure\small_btn.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\figure\superInstructions.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\figure\super_btn.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\figure\super_instructions.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\uninstall\uninstall\MarioApp.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\uninstall\uninstall\MarioInject.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\uninstall\uninstall\all_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\uninstall\uninstall\close.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\uninstall\uninstall\keep_btn.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\uninstall\uninstall\mario.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\uninstall\uninstall\page.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\uninstall\uninstall\uninstall_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\mario\uninstall\uninstall\uninstall_btn.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\morfix\image.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\morfix\logo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\morfix\morfixLeft.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\morfix\morfixRight.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\morfix\morfix_search_page03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\nana10\icon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\nana10\nanaTicker.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\nana10\style.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\nana10\xml2json2.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\netgames\landingPage\images\bg_big.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\netgames\landingPage\images\btn.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\netgames\landingPage\images\btn_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\netgames\landingPage\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\orange.co.uk\AddDevice_over.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\orange.co.uk\AddDivice.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\orange.co.uk\Add_new_Contact.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\orange.co.uk\Add_new_Contact_fix.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\orange.co.uk\Coverage Checker.PNG" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\orange.co.uk\Send_over.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\orange.co.uk\Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\orange.co.uk\ViewContactList.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\orange.co.uk\ViewContactList_over.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\orange.co.uk\add.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\orange.co.uk\addContact.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\orange.co.uk\addContact_over.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\orange.co.uk\add_over.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\orange.co.uk\back.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\orange.co.uk\back_over.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\orange.co.uk\bgfloat.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\orange.co.uk\build\Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\orange.co.uk\build\addNewContact.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\orange.co.uk\build\demo.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\orange.co.uk\contacts.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\orange.co.uk\contacts_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\orange.co.uk\contacts_fix.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\orange.co.uk\cuts.rar" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\orange.co.uk\inbox.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\orange.co.uk\send.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\pando\joygame\games_sprite.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\pando\joygame\launchMenu.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\pando\outspark\games_sprite.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\pando\outspark\launchMenu.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\pando\readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\reganam\enableToolbar.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rmscore\css\embedded\index.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rmscore\css\html\index.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rmscore\images\board_bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rmscore\images\box_bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rmscore\images\box_left.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rmscore\images\box_right.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rmscore\images\btn_left.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rmscore\images\btn_right.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rmscore\images\btn_strip.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rmscore\images\button_mockup.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rmscore\images\score_board.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rmscore\images\scoreboard_mockup.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rmscore\images\time_box_bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rmscore\images\time_box_left.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rmscore\images\time_box_right.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rmscore\php\csvToJson.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rmscore\php\index.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rmscore\php\path.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rmscore\php\xml2json.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rmscore\tmpl\embedded\index.tmpl.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rmscore\tmpl\html\index.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rmscore\xml\CNC_06353.Xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rmscore\xml\CRF_06353_00_34.Xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rmscore\xml\news.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\calculator.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\calendar.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\customization.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\dating.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\ebay.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\entertainment.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\facebook.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\finances.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\flightstatus.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\games.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\getIP.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\horoscope.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\jobs.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\mail.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\movies.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\music.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\new\calculator_new.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\new\calendar_new.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\new\customization_new.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\new\dating_new.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\new\ebay_new.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\new\entertainment_new.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\new\facebook_new.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\new\finances_new.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\new\flightstatus_new.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\new\games_new.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\new\getIP_new.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\new\horoscope_new.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\new\jobs_new.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\new\mail_new.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\new\movies_new.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\new\music_new.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\new\news_new.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\new\notes_new.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\new\popupoff_new.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\new\popupon_new.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\new\rrchannels_new.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\new\security_new.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\new\shopping_new.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\new\sports_new.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\new\stock_new.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\new\tickets_new.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\new\todo_new.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\new\travel_new.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\new\tv_new.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\new\twitter_new.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\new\users_new.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\new\weather_new.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\news.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\notes.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\popupoff.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\popupon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\rrchannels.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\security.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\shopping.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\sports.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\stock.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\tickets.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\todo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\travel.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\tv.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\twitter.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\users.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Icons\weather.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Thumbnails\icon_Entertainment.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Thumbnails\icon_Personalization.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Thumbnails\icon_dating.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Thumbnails\icon_finance.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Thumbnails\icon_games.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Thumbnails\icon_horoscope.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Thumbnails\icon_jobs.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Thumbnails\icon_mail.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Thumbnails\icon_news.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Thumbnails\icon_radio.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Thumbnails\icon_road_runner.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Thumbnails\icon_security.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Thumbnails\icon_shopping.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Thumbnails\icon_sports.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Thumbnails\icon_stocks.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Thumbnails\icon_tickets.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Thumbnails\icon_travel.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Thumbnails\icon_tv.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Thumbnails\icon_twitter.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Thumbnails\icon_video.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\Thumbnails\icon_weather.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\client.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\1_over.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\2_over.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\3_over.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\added_btn.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\back.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\back_over.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\bg_table_top.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\bord_bottom.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\bottom.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\bottom_table.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\btn.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\btn_Runner.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\btn_Runner_over.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\btn_add.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\btn_more.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\btn_more2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\btn_over.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\icon_Entertainment.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\icon_Local.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\icon_Personalization.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\icon_calculator.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\icon_calendar.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\icon_dating.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\icon_ebay.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\icon_facebook.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\icon_finance.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\icon_games.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\icon_help.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\icon_horoscope.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\icon_jobs.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\icon_mail.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\icon_maps.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\icon_news.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\icon_radio.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\icon_road_runner.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\icon_road_runner.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\icon_security.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\icon_shopping.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\icon_sports.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\icon_stocks.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\icon_tickets.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\icon_travel.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\icon_travel2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\icon_tv.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\icon_twitter.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\icon_video.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\icon_video2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\icon_weather.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\left_bord_table.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\logo_top.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\next.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\next_over.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\right_bord_table.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\top.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\images\top_table.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\page1.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\page2.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\page3.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\roadtest.htm" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\toolbar_RRgadgets.psd" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\rr\MP\user.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\CIApp.htm" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\CIBB.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\Css\SmartBox.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\Css\jScrollPane.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\Images\BG.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\Images\Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\Images\ajax-loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\Images\basic_box.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\Images\but.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\Images\but_over_mash.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\Images\close.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\Images\conduit_logo.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\Images\container_main.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\Images\cricinfo_gadget_mockup.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\Images\cricinfo_logo.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\Images\facebook_clicked.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\Images\facebook_reg.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\Images\fb_mini_disabled.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\Images\fb_mini_mouseover.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\Images\jobs_clicked_mash.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\Images\jobs_clicked_tech.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\Images\mockup.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\Images\ms_mini_disabled.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\Images\ms_mini_mouseover.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\Images\news_clicked.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\Images\news_reg.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\Images\photos_clicked.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\Images\photos_reg.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\Images\tbico.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\Images\tbico_over.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\Images\tw_mini_disabled.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\Images\tw_mini_mouseover.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\Images\twitter_clicked.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\Images\twitter_reg.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\Scripts\CricinfoWB.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\Scripts\CricinfoWB.rar" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\Scripts\autoScroll.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\Scripts\jMouseWheel.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\Scripts\jScrollPane-1.2.3.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\Scripts\jquery-1.3.2-vsdoc2.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\readRSS.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\readTPUB.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\readTWIT.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\scriptWB.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla\widget.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\walla_wp\index.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\webdialog\cap1\cap1.rar" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\webdialog\cap1\cwd.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\webdialog\cap1\whitesmoke.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\webdialog\cmStub.exe" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\webdialog\cookieize.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\webdialog\cwd.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\webdialog\pngize.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\webdialog\pubtocode.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\webdialog\reganam.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\webdialog\vgrabber.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\webdialog\whitesmoke.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\wetter\GeoIP.dat" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\wetter\index.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\whitesmoke\qualitypush\CT3195847.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\whitesmoke\qualitypush\allcodetoinject.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\whitesmoke\qualitypush\allcodetoinject.rar" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\whitesmoke\qualitypush\applicationWhitesmoke.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\whitesmoke\qualitypush\whitesmokecss.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\elad_public\xfire\test_conduitwebinstaller.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stratosphere/index.html" afterPath="$PROJECT_DIR$/stratosphere/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stratosphere/js/app.js" afterPath="$PROJECT_DIR$/stratosphere/js/app.js" />
+    </list>
     <ignored path="elad_public.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,14 +1014,63 @@
   <component name="FavoritesManager">
     <favorites_list name="elad_public" />
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="users.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://C:/Program Files (x86)/nodejs/users.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="37" selection-start="431" selection-end="431" vertical-scroll-proportion="0.5555556">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/stratosphere/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="0" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TODO.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/stratosphere/TODO.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="47" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
   <component name="Git.Settings">
     <option name="SSH_EXECUTABLE" value="NATIVE_SSH" />
     <option name="LINE_SEPARATORS_CONVERSION" value="NONE" />
     <option name="SYNC_SETTING" value="DONT" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="C:/Program Files (x86)/nodejs/users.js" />
+        <option value="$PROJECT_DIR$/stratosphere/index.html" />
+        <option value="$PROJECT_DIR$/stratosphere/js/app.js" />
+        <option value="$PROJECT_DIR$/foxnews/widget.html" />
+      </list>
+    </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1920" />
-    <option name="height" value="1036" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -63,6 +1106,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elad_public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elad_public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -81,32 +1134,33 @@
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="fc680aa1-d8f0-4a07-acb0-839fd884323e" name="Default" comment="" />
       <created>1372767219096</created>
       <updated>1372767219096</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1036" extended-state="0" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32924107" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2498671" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1391671" sideWeight="0.6707589" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="JsTestDriver Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="JsTestDriver Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -162,6 +1216,30 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/stratosphere/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="65" selection-start="359" selection-end="359" vertical-scroll-proportion="0.18676123" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stratosphere/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stratosphere/TODO.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="47" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/nodejs/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="37" selection-start="431" selection-end="431" vertical-scroll-proportion="0.5555556">
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
 
